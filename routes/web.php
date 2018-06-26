@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/cirugia/configurar_cirugia','CirugiaController');
+Route::resource('/cirugias/configurar_cirugias','CirugiasController');
+Route::resource('/clinica/configurar_clinica','ClinicaController');
+Route::resource('/contacto/configurar_contacto','ContactoController');
+Route::resource('/cv/configurar_cv','CvController');
+Route::resource('/cv_lista/configurar_cv_lista','CvListaController');
+Route::resource('/inicio/configurar_inicio','InicioController');
