@@ -13,7 +13,7 @@ class InicioFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,8 +24,8 @@ class InicioFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'logo'=>'max:250',
-            'imagen'=>'required|max:250'
+            'logo'=>'mimes:jpeg,bmp,png',
+            'imagen'=>'mimes:jpeg,bmp,png'
         ];
     }
 }

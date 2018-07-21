@@ -3,17 +3,17 @@
 namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\Inicio;
+use paillet\Inicio;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
-use admin\Http\Requests\InicioFormRequest;
+use paillet\Http\Requests\InicioFormRequest;
 use DB;
 
 class InicioController extends Controller
 {
     public function __construct()
     {
-		$this->middleware('auth');
+
     }
     public function index(Request $request)
     {
@@ -21,12 +21,12 @@ class InicioController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$inicio=DB::table('inicio')->get();
-    		return view('inicio.configurar_inicio.index',["inicio"=>$inicio,"searchText"=>$query]);
+    		return view('admin.inicio.index',["inicio"=>$inicio,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("inicio.configurar_inicio.create");
+    	return view ("admin.inicio.create");
     }
 	public function store(InicioFormRequest $request)
 	{
@@ -42,15 +42,15 @@ class InicioController extends Controller
 			$inicio->imagen=$file->getClientOriginalName();
 		}
 		$inicio->save();
-		return Redirect::to('inicio/configurar_inicio');
+		return Redirect::to('admin/inicio');
 	}
 	public function show($id)
 	{
-		return view("inicio.configurar_inicio.show",["inicio"=>Inicio::findOrFail($id)]);
+		return view("admin.inicio.show",["inicio"=>Inicio::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("inicio.configurar_inicio.edit",["inicio"=>Inicio::findOrFail($id)]);	
+		return view("admin.inicio.edit",["inicio"=>Inicio::findOrFail($id)]);
 	}
 	public function update(InicioFormRequest $request, $id)
 	{
@@ -66,12 +66,12 @@ class InicioController extends Controller
 			$inicio->imagen=$file->getClientOriginalName();
 		}
 		$inicio->update();
-		return Redirect::to('inicio/configurar_inicio');
+		return Redirect::to('admin/inicio');
 	}
 	public function destroy($id)
 	{
 		$inicio=Inicio::findOrFail($id);
 		$inicio->delete();
-		return Redirect::to('inicio/configurar_inicio');
+		return Redirect::to('admin/inicio');
 	}
 }

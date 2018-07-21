@@ -15,10 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/cirugia/configurar_cirugia','CirugiaController');
-Route::resource('/cirugias/configurar_cirugias','CirugiasController');
-Route::resource('/clinica/configurar_clinica','ClinicaController');
-Route::resource('/contacto/configurar_contacto','ContactoController');
-Route::resource('/cv/configurar_cv','CvController');
-Route::resource('/cv_lista/configurar_cv_lista','CvListaController');
-Route::resource('/inicio/configurar_inicio','InicioController');
+Route::get('/admin', function () {
+    return view('layouts/admin');
+});
+
+Route::resource('/admin/cirugia','CirugiaController');
+Route::resource('/admin/cirugias','CirugiasController');
+Route::resource('/admin/clinica','ClinicaController');
+Route::resource('/admin/contacto','ContactoController');
+Route::resource('/admin/cv','CvController');
+Route::resource('/admin/cv_lista','CvListaController');
+Route::resource('/admin/inicio','InicioController');
