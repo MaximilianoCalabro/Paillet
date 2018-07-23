@@ -673,33 +673,33 @@
             <div class="col-md-6">
                 <!-- address start -->
                 <div class="address-block">
+                    @foreach ($contacto as $cont)
                     <!-- Location -->
                     <div class="media">
                         <i class="fa fa-map-o"></i>
                         <div class="media-body">
-                            <h3>San Martín 3067 PA</h3>
-                            <p>Santa Fe 3000, Argentina</p>
+                            <h3>{{ $cont->direccion }}</h3>
                         </div>
                     </div>   
                     <!-- Phone --> 
                     <div class="media">
                         <i class="fa fa-phone"></i>
                         <div class="media-body">
-                            <h3>(0342) 456 3570</h3>
+                            <h3>{{ $cont->telefono }}</h3>
                         </div>
                     </div>
                     <!-- Whatsapp -->  
                     <div class="media">
                         <i class="fa fa-whatsapp"></i>
                         <div class="media-body">
-                            <h3>(0342) 154 063196</h3>
+                            <h3>{{ $cont->whatsapp }}</h3>
                         </div>
                     </div>
                     <!-- Email -->
                     <div class="media">
                         <i class="fa fa-envelope-o"></i>
                         <div class="media-body">
-                            <h3>jcp@estetica-paillet.com.ar</h3>
+                            <h3>{{ $cont->correo }}</h3>
                         </div>
                     </div>
                     <div class="media">
@@ -721,6 +721,7 @@
                       </ul>
                     </div>
                 <!-- address end -->
+                @endforeach
                 </div>
                 <div class="col-md-8">
 

@@ -13,14 +13,23 @@
                 </div>
             @endif
 
-            {!!Form::model($inicio,['method'=>'PATCH','route'=>['inicio.update',$inicio->id_inicio],'files'=>'true'])!!}
+            {!!Form::model($contacto,['method'=>'PATCH','route'=>['contacto.update',$contacto->id_contacto],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen Slider</label>
-                <input type="file" name="imagen" class="form-control" value="{{$inicio->imagen}}">
-                @if (($inicio->imagen)!='')
-                    <img src="{{asset('img/'.$inicio->imagen)}}" height="150px" width="150px">
-                @endif
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" class="form-control" value="{{$contacto->direccion}}" placeholder="Dirección...">
+            </div> 
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" class="form-control" value="{{$contacto->telefono}}" placeholder="Teléfono...">
+            </div>  
+            <div class="form-group">
+                <label for="whatsapp">Whatsapp</label>
+                <input type="text" name="whatsapp" class="form-control" value="{{$contacto->whatsapp}}" placeholder="Whatsapp...">
+            </div>  
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="text" name="correo" class="form-control" value="{{$contacto->correo}}" placeholder="Correo...">
             </div>
 
             <div class="form-group">

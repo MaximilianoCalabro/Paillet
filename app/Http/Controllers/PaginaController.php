@@ -13,8 +13,9 @@ class PaginaController extends Controller
 		$inicio=DB::table('inicio')->get();
 		$cirugia=DB::table('cirugia')->get();
 		$cirugia_slider=DB::table('cirugia_slider')->get();
+		$contacto=DB::table('contacto')->get();
 
-		return view('index',["inicio"=>$inicio, "cirugia"=>$cirugia, "cirugia_slider"=>$cirugia_slider]);
+		return view('index',["inicio"=>$inicio, "cirugia"=>$cirugia, "cirugia_slider"=>$cirugia_slider, "contacto"=>$contacto]);
 
 	}
 }

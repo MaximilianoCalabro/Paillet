@@ -16,9 +16,21 @@
             {!!Form::open(array('url'=>'/admin/contacto','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen Slider</label>
-                <input type="file" name="imagen" class="form-control">
-            </div>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" class="form-control" placeholder="Dirección...">
+            </div> 
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" class="form-control" placeholder="Teléfono...">
+            </div>  
+            <div class="form-group">
+                <label for="whatsapp">Whatsapp</label>
+                <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp...">
+            </div>  
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="text" name="correo" class="form-control" placeholder="Correo...">
+            </div>  
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>

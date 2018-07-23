@@ -130,7 +130,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/admin/contacto"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
