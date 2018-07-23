@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/admin', function () {
@@ -20,9 +20,12 @@ Route::get('/admin', function () {
 });
 
 Route::resource('/admin/cirugia','CirugiaController');
+Route::resource('/admin/cirugia_slider','CirugiaSliderController');
 Route::resource('/admin/cirugias','CirugiasController');
 Route::resource('/admin/clinica','ClinicaController');
 Route::resource('/admin/contacto','ContactoController');
 Route::resource('/admin/cv','CvController');
 Route::resource('/admin/cv_lista','CvListaController');
 Route::resource('/admin/inicio','InicioController');
+
+Route::get('/', 'PaginaController@show');

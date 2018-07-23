@@ -3,17 +3,17 @@
 namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\Cirugias;
+use paillet\Cirugias;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
-use admin\Http\Requests\CirugiasFormRequest;
+use paillet\Http\Requests\CirugiasFormRequest;
 use DB;
 
 class CirugiasController extends Controller
 {
     public function __construct()
     {
-		$this->middleware('auth');
+		
     }
     public function index(Request $request)
     {
@@ -21,12 +21,12 @@ class CirugiasController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$cirugias=DB::table('cirugias')->get();
-    		return view('cirugias.configurar_cirugias.index',["cirugias"=>$cirugias,"searchText"=>$query]);
+    		return view('admin.cirugias.index',["cirugias"=>$cirugias,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("cirugias.configurar_cirugias.create");
+    	return view ("admin.cirugias.create");
     }
 	public function store(CirugiasFormRequest $request)
 	{
@@ -47,15 +47,15 @@ class CirugiasController extends Controller
 			$cirugias->imagen_slider=$file->getClientOriginalName();
 		}
 		$cirugias->save();
-		return Redirect::to('cirugias/configurar_cirugias');
+		return Redirect::to('admin/cirugias');
 	}
 	public function show($id)
 	{
-		return view("cirugias.configurar_cirugias.show",["cirugias"=>Cirugias::findOrFail($id)]);
+		return view("admin.cirugias.show",["cirugias"=>Cirugias::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("cirugias.configurar_cirugias.edit",["cirugias"=>Cirugias::findOrFail($id)]);	
+		return view("admin.cirugias.edit",["cirugias"=>Cirugias::findOrFail($id)]);	
 	}
 	public function update(CirugiasFormRequest $request, $id)
 	{
@@ -76,12 +76,12 @@ class CirugiasController extends Controller
 			$cirugias->imagen_slider=$file->getClientOriginalName();
 		}
 		$cirugias->update();
-		return Redirect::to('cirugias/configurar_cirugias');
+		return Redirect::to('admin/cirugias');
 	}
 	public function destroy($id)
 	{
 		$cirugias=Cirugias::findOrFail($id);
 		$cirugias->delete();
-		return Redirect::to('cirugias/configurar_cirugias');
+		return Redirect::to('admin/cirugias');
 	}
 }

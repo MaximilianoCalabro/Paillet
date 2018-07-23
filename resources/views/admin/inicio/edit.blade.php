@@ -16,13 +16,6 @@
             {!!Form::model($inicio,['method'=>'PATCH','route'=>['inicio.update',$inicio->id_inicio],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="logo">Logo</label>
-                <input type="file" name="logo" class="form-control" value="{{$inicio->logo}}">
-                @if (($inicio->logo)!='')
-                    <img src="{{asset('img/'.$inicio->logo)}}" height="150px" width="150px">
-                @endif
-            </div>
-            <div class="form-group">
                 <label for="imagen">Imágen Slider</label>
                 <input type="file" name="imagen" class="form-control" value="{{$inicio->imagen}}">
                 @if (($inicio->imagen)!='')

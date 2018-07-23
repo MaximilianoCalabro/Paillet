@@ -31,11 +31,6 @@ class InicioController extends Controller
 	public function store(InicioFormRequest $request)
 	{
 		$inicio=new Inicio;
-		if (Input::hasFile ('logo')){
-			$file=Input::file('logo');
-			$file->move(public_path().'/img/',$file->getClientOriginalName());
-			$inicio->logo=$file->getClientOriginalName();
-		}
 		if (Input::hasFile ('imagen')){
 			$file=Input::file('imagen');
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
@@ -55,11 +50,6 @@ class InicioController extends Controller
 	public function update(InicioFormRequest $request, $id)
 	{
 		$inicio=Inicio::findOrFail($id);
-		if (Input::hasFile ('logo')){
-			$file=Input::file('logo');
-			$file->move(public_path().'/img/',$file->getClientOriginalName());
-			$inicio->logo=$file->getClientOriginalName();
-		}
 		if (Input::hasFile ('imagen')){
 			$file=Input::file('imagen');
 			$file->move(public_path().'/img/',$file->getClientOriginalName());

@@ -15,10 +15,6 @@
 
             {!!Form::open(array('url'=>'/admin/inicio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
-            {{--<div class="form-group">--}}
-                {{--<label for="logo">Logo</label>--}}
-                {{--<input type="file" name="logo" class="form-control">--}}
-            {{--</div>--}}
             <div class="form-group">
                 <label for="imagen">Imágen Slider</label>
                 <input type="file" name="imagen" class="form-control">

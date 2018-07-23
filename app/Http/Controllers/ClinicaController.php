@@ -3,17 +3,17 @@
 namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\Clinica;
+use paillet\Clinica;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
-use admin\Http\Requests\ClinicaFormRequest;
+use paillet\Http\Requests\ClinicaFormRequest;
 use DB;
 
 class ClinicaController extends Controller
 {
     public function __construct()
     {
-		$this->middleware('auth');
+		
     }
     public function index(Request $request)
     {

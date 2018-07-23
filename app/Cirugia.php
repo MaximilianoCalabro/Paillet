@@ -14,9 +14,7 @@ class Cirugia extends Model
 
 	protected $fillable =[
 		'texto',
-		'imagen',
-		'titulo',
-		'texto2'
+		'titulo'
 	];
 
 	protected $guarded =[

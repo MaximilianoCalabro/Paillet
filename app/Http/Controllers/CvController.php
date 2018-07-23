@@ -3,17 +3,17 @@
 namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\Cv;
+use paillet\Cv;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
-use admin\Http\Requests\CvFormRequest;
+use paillet\Http\Requests\CvFormRequest;
 use DB;
 
 class CvController extends Controller
 {
     public function __construct()
     {
-		$this->middleware('auth');
+		
     }
     public function index(Request $request)
     {

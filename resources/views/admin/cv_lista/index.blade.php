@@ -2,7 +2,7 @@
 @section ('contenido')
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>- Inicio - <!-- <a href="/contactenos/configurar_contactenos/create"><button class="btn btn-success">Nuevo</button></a> --></h3>
+		<h3>- Inicio - </h3>
 	</div>
 </div>
 
@@ -11,24 +11,18 @@
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
-					<th>Título</th>
-					<th>Dirección</th>
-					<th>Teléfono</th>
-					<th>Correo</th>
+				<th>Imágenes Slider	<a href="/admin/inicio/create"><button class="btn btn-success">Nuevo</button></a></th>
 				</thead>
-               @foreach ($contactenos as $cat)
-				<tr>
-					<td>{{ $cat->titulo}}</td>
-					<td>{{ $cat->direccion}}</td>
-					<td>{{ $cat->numtel}}</td>
-					<td>{{ $cat->correo}}</td>
+				@foreach ($inicio as $cat)
+					<tr>
+						<td><img src="{{asset('img/'.$cat->imagen)}}" height="150px" width="150px"> </td>
 
-					<td>
-						<a href="{{URL::action('ContactenosController@edit',$cat->idcontactenos)}}"><button class="btn btn-info">Editar</button></a>
-                        <!-- <a href="" data-target="#modal-delete-{{$cat->idcontactenos}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a> -->
-					</td>
-				</tr>
-				@include ('contactenos.configurar_contactenos.modal')
+						<td>
+							<a href="{{URL::action('InicioController@edit',$cat->id_inicio)}}"><button class="btn btn-info">Editar</button></a>
+							<a href="" data-target="#modal-delete-{{$cat->id_inicio}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
+						</td>
+					</tr>
+					@include ('admin.inicio.modal')
 				@endforeach
 			</table>
 		</div>

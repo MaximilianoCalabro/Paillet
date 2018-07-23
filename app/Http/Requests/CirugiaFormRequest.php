@@ -24,10 +24,8 @@ class CirugiaFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'texto'=>'required|max:500',
-            'imagen'=>'required|max:250',
             'titulo'=>'required|max:50',
-            'texto2'=>'required|max:500'
+            'texto'=>'required|max:500'
         ];
     }
 }

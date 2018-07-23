@@ -3,16 +3,16 @@
 namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\CvLista;
+use paillet\CvLista;
 use Illuminate\Support\Facades\Redirect;
-use admin\Http\Requests\CvListFormRequest;
+use paillet\Http\Requests\CvListFormRequest;
 use DB;
 
 class CvListaController extends Controller
 {
     public function __construct()
     {
-		$this->middleware('auth');
+		
     }
     public function index(Request $request)
     {

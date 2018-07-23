@@ -24,7 +24,6 @@ class InicioFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'logo'=>'mimes:jpeg,bmp,png',
             'imagen'=>'mimes:jpeg,bmp,png'
         ];
     }

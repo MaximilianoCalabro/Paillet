@@ -13,7 +13,6 @@ class Inicio extends Model
 	public $timestamps=false;
 
 	protected $fillable =[
-		'logo',
 		'imagen'		
 	];
 

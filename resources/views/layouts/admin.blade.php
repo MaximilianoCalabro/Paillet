@@ -83,7 +83,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/admin/inicio"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -94,8 +94,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Configurar Cirugía</a></li>
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Configurar Cirugías</a></li>
+                <li><a href="/admin/cirugia"><i class="fa fa-circle-o"></i> Primera Parte</a></li>
+                <li><a href="/admin/cirugia_slider"><i class="fa fa-circle-o"></i> Slider</a></li>
+                <li><a href="/admin/cirugias"><i class="fa fa-circle-o"></i> Cirugías</a></li>
               </ul>
             </li>
 

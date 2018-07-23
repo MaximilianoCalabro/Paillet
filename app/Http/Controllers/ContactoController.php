@@ -3,16 +3,16 @@
 namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\Contacto;
+use paillet\Contacto;
 use Illuminate\Support\Facades\Redirect;
-use admin\Http\Requests\ContactoFormRequest;
+use paillet\Http\Requests\ContactoFormRequest;
 use DB;
 
 class ContactoController extends Controller
 {
     public function __construct()
     {
-		$this->middleware('auth');
+		
     }
     public function index(Request $request)
     {
@@ -20,12 +20,12 @@ class ContactoController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$contacto=DB::table('contacto')->get();
-    		return view('contacto.configurar_contacto.index',["contacto"=>$contacto,"searchText"=>$query]);
+    		return view('admin.contacto.index',["contacto"=>$contacto,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("contacto.configurar_contacto.create");
+    	return view ("admin.contacto.create");
     }
 	public function store(ContactoFormRequest $request)
 	{
@@ -35,15 +35,15 @@ class ContactoController extends Controller
 		$contacto->whatsapp=$request->get('whatsapp');
 		$contacto->correo=$request->get('correo');
 		$contacto->save();
-		return Redirect::to('contacto/configurar_contacto');
+		return Redirect::to('admin/contacto');
 	}
 	public function show($id)
 	{
-		return view("contacto.configurar_contacto.show",["contacto"=>Contacto::findOrFail($id)]);
+		return view("admin.contacto.show",["contacto"=>Contacto::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("contacto.configurar_contacto.edit",["contacto"=>Contacto::findOrFail($id)]);	
+		return view("admin.contacto.edit",["contacto"=>Contacto::findOrFail($id)]);	
 	}
 	public function update(ContactoFormRequest $request, $id)
 	{
@@ -53,13 +53,13 @@ class ContactoController extends Controller
 		$contacto->whatsapp=$request->get('whatsapp');
 		$contacto->correo=$request->get('correo');
 		$contacto->update();
-		return Redirect::to('contacto/configurar_contacto');
+		return Redirect::to('admin./ontacto');
 	}
 	public function destroy($id)
 	{
 		$contacto=Contacto::findOrFail($id);
 		$contacto->delete();
-		return Redirect::to('contacto/configurar_contacto');
+		return Redirect::to('admin/contacto');
 	}
 
 }
