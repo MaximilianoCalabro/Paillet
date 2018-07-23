@@ -13,11 +13,11 @@
                 </div>
             @endif
 
-            {!!Form::open(array('url'=>'/admin/inicio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
+            {!!Form::open(array('url'=>'/admin/cv_lista','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen Slider</label>
-                <input type="file" name="imagen" class="form-control">
+                <label for="texto">CV Antecedentes de cirugía en general</label>
+                <textarea type="text" name="texto" class="form-control" placeholder="CV antecedentes..."></textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>

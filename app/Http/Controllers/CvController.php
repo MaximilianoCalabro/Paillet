@@ -21,12 +21,12 @@ class CvController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$cv=DB::table('cv')->get();
-    		return view('cv.configurar_cv.index',["cv"=>$cv,"searchText"=>$query]);
+    		return view('admin.cv.index',["cv"=>$cv,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("cv.configurar_cv.create");
+    	return view ("admin.cv.create");
     }
 	public function store(CvFormRequest $request)
 	{
@@ -38,15 +38,15 @@ class CvController extends Controller
 			$cv->imagen=$file->getClientOriginalName();
 		}
 		$cv->save();
-		return Redirect::to('cv/configurar_cv');
+		return Redirect::to('admin/cv');
 	}
 	public function show($id)
 	{
-		return view("cv.configurar_cv.show",["cv"=>Cv::findOrFail($id)]);
+		return view("admin.cv.show",["cv"=>Cv::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("cv.configurar_cv.edit",["cv"=>Cv::findOrFail($id)]);	
+		return view("admin.cv.edit",["cv"=>Cv::findOrFail($id)]);	
 	}
 	public function update(CvFormRequest $request, $id)
 	{
@@ -58,13 +58,13 @@ class CvController extends Controller
 			$cv->imagen=$file->getClientOriginalName();
 		}
 		$cv->update();
-		return Redirect::to('cv/configurar_cv');
+		return Redirect::to('admin/cv');
 	}
 	public function destroy($id)
 	{
 		$cv=Cv::findOrFail($id);
 		$cv->delete();
-		return Redirect::to('cv/configurar_cv');
+		return Redirect::to('admin/cv');
 	}
 
 }

@@ -45,93 +45,6 @@
                     </a>
                 </figure>
             </div>
-            <div class="right-side">
-            <figure>
-                <a href="#openModal">
-                  <img src="img/paillet.jpg" alt="" width="130" class="foto2">
-                </a>
-            </figure>
-                <div id="openModal" class="modalDialog">
-                    <div>
-                        <a href="#close" title="Close" class="close">X</a>
-                        <div>
-                            <img src="img/paillet.jpg" class="foto">
-                            <h2 class="popTitulo">Dr. Juan Carlos Paillet</h2>
-                        </div>
-                        <div class="historia">
-                        <p> El Dr. Juan Carlos Paillet nace en la Provincia de Santa Fe, Argentina, el 2 de Mayo de 1972.
-                            Cursa sus estudios primarios en el colegio La Salle Jobson (1977-1984), Santa Fe, Capital.
-                            Cursa sus estudios secundarios en el colegio La Salle Jobson, bachiller con orientación biológica (1985-1989), Santa Fe, Capital.
-                            Posee dominio del idioma inglés americano y británico.
-                            Realiza la Carrera de Medicina en la Universidad Nacional de Rosario. (1990-1997).
-                            Realiza su residencia en Cirugía General en el Hospital JM Cullen . Santa Fe, Capital (1-6-97 al 31-5-2000), habiendo ingresado por concurso de antecedentes y oposición.
-                            Realiza la Residencia de Cirugía Estética y Reconstructiva en el Instituto Jalisciense de Cirugía Reconstructiva de Jalisco Dr. José Guerrerosantos, Guadalajara, México (1-3-01 al 29-2-2004), habiendo ingresado por concurso de antecedentes y oposición.</p>
-                        </div>
-                        <h2>Antecedentes de cirugía en general.</h2>
-                        
-                        <ul>
-                            <li>Residencia de Cirugía General Hospital JM Cullen . Santa Fe, Capital (1-6-97 al 31-5-2000). Habiendo ingresado por concurso de antecedentes y oposición.</li>
-                            <li>Asistencia a la “1° Jornadas de Actualización en Patología Quirúrgica”. Santa Fe, Capital. 13 de Junio 1998.</li>
-                            <li>Presentación de trabajo en la Sociedad de Cirugía y Gastroenterología de Santa Fe
-                            “Traumatismos Agudos Toráxicos”. 21 de mayo 1998.</li>
-                            <li>Miembro Titular del “IX Congreso Uruguayo Medico-Quirúrgico de Emergencia”. Montevideo, Uruguay.5 al 7 de Agosto de 1998.
-                            Presentación Poster “Traumatismos Toráxicos” en el IX Congreso Uruguayo Medico-Quirúrgico de Emergencia. Montevideo, Uruguay. 5 al 7 de Agosto de 1998.</li>
-                            <li>Aprobación del Curso teórico práctico “Manejo Avanzado del Trauma ATLS”. Santa Fe, Capital. 5 y 6 de Septiembre de 1998.</li>
-                            <li>Asistencia al “69° Congreso Argentino de Cirugía. 42° Congreso Argentino de Cirugía Toráxica. 23° Congreso Argentino de Coloproctología. 9° Congreso Argentino de Angiología y Cirugía Cardiovascular”. Buenos Aires, Arg. 12 al 16 de Octubre de 1998.</li>
-                            <li>Miembro Titular del “XI Congreso Panamericano y III Congreso Argentino de Trauma”. Buenos Aires, Arg. 11 al 14 de Noviembre de 1998.</li>
-                            <li>Miembro Titular de “La Sociedad Argentina de Medicina y Cirugía del Trauma”. Buenos Aires, Arg.Diciembre 1998.</li>
-                            <li>Presentación de trabajo en la Sociedad de Cirugía y Gastroenterología de Santa Fe “Adenocarcinoma del Angulo de Treitz”. 15 de Abril de 1999.</li>
-                            <li>Secretario de las “2° Jornadas de Actualización en Patología Quirúrgica”. Santa Fe, Capital. 12 de Junio 1999.</li>
-                            <li>Miembro Titular del “XXXVI Congreso de la Asociación de Cirugía del Litoral”. Santa Fe, Capital. 18 al 20 de Agosto de 1999.</li>
-                            <li>Secretario en “Relato Oficial – Hernias y Eventraciones - del XXXVI Congreso de la Asociación de Cirugía del Litoral”. Santa Fe, Capital. 18 al 20 de Agosto de 1999.</li>
-                            <li>Concurrente del “IV Encuentro de Residentes y Ex Residentes de Cirugía de la Ciudad de Rosario y II Jornadas de la Asociación Argentina de Médicos Residentes de Cirugía de la Región Litoral”. Rosario, Santa Fe. 24 y 25 de septiembre de 1999.</li>
-                            <li>Presentación de trabajo en la Sociedad de Cirugía y Gastroenterología de Santa Fe “Medidas Hepáticas Traumáticas”. 21 de Octubre de 1999.</li>
-                            <li>Asistente a la “I Reunión Interdisciplinaria de Cirugía Laparoscópica”. Santa Fe, Capital. 29 y 30 de Octubre de 1999.</li>
-                            <li>Rotación de 3 meses en la University of Illinois at Chicago, Minimally Invasive Surgery Center. Como Residente en formación en Cirugía Laparoscópica, a cargo del Dr. Santiago Horgan. 1 de Febrero al 30 de Abril, año 2000.</li>
-                            <li>Asistencia a “SAGES Annual Scientific Session and Postgraduate Course”. Atlanta, Georgia, USA. 29 de Marzo al 1 de Abril, año 2000.</li>
-                            <li>Asistencia al Curso “Endoscopic Management of Colorectal Disease” - SAGES. Atlanta, Georgia, USA. 29 de Marzo, año 2000.</li>
-                            <li>Titulación como Cirujano General, previo aprobación de examen teórico (escrito y oral) y práctico. 25 de Septiembre, año 2000. Otorgado por mesa directiva Colegio Médico.</li>
-                        </ul>
-
-                        <h2>Antecedentes de cirugía plástica</h2>
-
-                        <ul>
-                            <li>Residencia de Cirugía Estética y Reconstructiva - Instituto Jalisciense de Cirugía Reconstructiva de Jalisco Dr. José Guerrerosantos – Guadalajara - México (1-3-01 al 29-2-2004) Habiendo ingresado por concurso de antecedentes y oposición.</li>
-                            <li>Asistencia al “XVI Curso de Actualización sobre el Manejo del Paciente Quemado – XVI Congreso Nacional de la Asociación Mexicana de Quemaduras, A.C”. Guadalajara, Jalisco, México. 18 al 21 de Abril, del 2001.</li>
-                            <li>Asistencia al “XXVIII Simposio Anual Internacional de Cirugía Plástica – Estética – 2001”. Guadalajara, Jalisco, México. 8 al 12 de Noviembre del 2001.</li>
-                            <li>Asistencia al “Seminario de Transplante de Pelo”. Guadalajara, Jalisco, México. 1 y 2 de Marzo del 2002.</li>
-                            <li>Asistencia al “Annual Meeting of The American Society for Aesthetic Plastic Surgery”. Las Vegas, Nevada, USA. 27 de Abril al 3 de Mayo del 2002.</li>
-                            <li>Asistencia al “XIII Curso Internacional de Cirugía Plástica y Estética”. Barcelona, España. 26 al 29 de Junio del 2002.</li>
-                            <li>Participación en el Curso-Taller “Aumento Mamario con Implantes Anatómicos”. Guadalajara, Jalisco, México. 9 y 10 de Agosto del 2002.</li>
-                            <li>Asistencia en la conferencia “Aplicación Clínica de la Microcirugía en Cirugía Reconstructiva”. Guadalajara, Jalisco, México. 20 y 21 De Septiembre del 2002.</li>
-                            <li>Reconocimiento por su labor en el Programa “Cirugía Extramuros – El Cirujano Te Visita”. Ojuelos, Jalisco, México. 25 al 27 de Septiembre del 2002.</li>
-                            <li>Reconocimiento por su participación en la “V Jornadas de Cirugías Reconstructivas”. Yahualica de González Gallo, Jalisco, México. Octubre del 2002.</li>
-                            <li>Asistencia al “XXIX Simposio Anual Internacional de Cirugía Plástica – Estética – 2002”. Guadalajara, Jalisco, México. 12 al 16 de Noviembre del 2002.</li>
-                            <li>Participación en el “III Curso Internacional Cirugía del Contorno Corporal”. Guadalajara, Jalisco, México. 11 al 14 de Junio del 2003.</li>
-                            <li>Asistencia al “XXX Simposio Anual Internacional de Cirugía Plástica – Estética – 2003”. Puerto Vallarta, Jalisco, México. 4 al 8 de Noviembre del 2003.</li>
-                            <li>Diploma por haber obtenido “El PRIMER Lugar en el Concurso de Residentes Dr. José Barba Rubio, con el tema: UNA NUEVA ALTERNATIVA EN EL MANEJO DE LA CONTRACTURA CAPSULAR MAMARIA”. Puerto Vallarta, Jalisco, México. 5 de Noviembre del 2003.</li>
-                            <li>Asistencia al “XXXV Congreso Nacional de la Asociación Mexicana de Cirugía Plástica, Estética y Reconstructiva, A. C.”. Monterrey, Nuevo León, México. 18 al 21 de febrero del 2004.</li>
-                            <li>Reconocimiento por “El PRIMER Lugar dentro del XXXIII Concurso Nacional de Residentes Dr. Fernando Ortiz Monasterio. En el XXXV Congreso Nacional de la Asociación Mexicana de Cirugía Plástica, Estética y Reconstructiva, A. C.”. Monterrey, Nuevo León, México. Febrero del 2004.</li>
-                            <li>Finalización Residencia en “Cirugía Plástica y Reconstructiva en el Instituto Jalisciense de Cirugía reconstructiva Dr. José Guerrerosantos – I.J.C.R.” Guadalajara, Jalisco, México. Febrero 2001 – Febrero 2004.</li>
-                            <li>Publicación del artículo “Aesthetic Facial Contour Augmentation with Microlipofilling” Aesthetic Surgery Journal – July/August 2003 Volume 23, Number 4, Pages 239-247; como Co-Autor.</li>
-                            <li>Asistencia al XXXIV Congreso Argentino de Cirugía Plástica. La Plata, abril 2004.</li>
-                            <li>Presentación del trabajo “Una nueva alternativa en el manejo de la contractura capsular mamaria” en la sesión de aportes al módulo de implantes mamarios, en el XXXIV Congreso Argentino de Cirugía Plástica. La Plata, abril 2004.</li>
-                            <li>Participación del XV Congreso de la Federación Ibero Latino Americana de Cirugía Plástica (FILACP). Sevilla – España, 7 al 11 de mayo del 2004.</li>
-                            <li>Participación en el Concurso de Residentes de la Federación Ibero Latino Americana de Cirugía Plástica (FILACP), con el trabajo “Una nueva alternativa en el manejo de la contractura capsular mamaria”. Sevilla – España, 9 de mayo del 2004.</li>
-                            <li>Titulación como Cirujano Plástico, previo aprobación de examen teórico (escrito y oral) y práctico.14 de Julio, de 2004. Otorgado por mesa directiva Colegio Médico Santa Fe 1° circunscripción.</li>
-                            <li>Participación como asistente al III Curso Intensivo para médicos en formación Cirugía Plástica Estética Reparadora Dr. José M. Robles. Buenos Aires, 30 de septiembre de 2004.</li>
-                            <li>Participación en el IX Simposio Internacional de Cirugía Plástica Siglo XXI. Buenos Aires, 1 y 2 de Octubre de 2004.</li>
-                            <li>Asistencia al XXXI Simposio Anual Internacional de Cirugía Plástica – Estética 2004. Puerto Vallarta, noviembre 9 al 13 de 2004, México.</li>
-                            <li>Publicación del articulo “Electrostimulation: Uses and applications for periprosthetic capsular contracture: Experimental model” Aesth. Plast. Surg. 29:410 – 414, 2005. Como Co-Autor.</li>
-                            <li>Asistencia al XVI Congreso de la Federación Ibero latinoamericana de Cirugía Plástica – XXXVI Congreso Argentino de Cirugía Plástica. 28 de marzo al 1 de abril de 2006 – Buenos Aires – Argentina.</li>
-                            <li>Asistencia al IV Curso de Cirugía Oncoplastica en Patología Mamaria. 31 de agosto, 1 de septiembre de 2006 - Buenos Aires – Argentina.</li>
-                            <li>Asistencia al XXXIII Simposio Anual Internacional de Cirugía Plástica – Estética 2006. Puerto Vallarta, noviembre 7 al 11 de 2006, México.</li>
-                            <li>Publicacion del articulo “Combined Gluteoplasty: Liposuction and Gluteal Implants” Plastic and Reconstructive Surgery, 119(3):1067-1074, March 2007. Como Co-Autor.</li>
-                            <li>Asistencia al “Annual Meeting of The American Society for Aesthetic Plastic Surgery”. New York, USA, april 19 – 24, 2007.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
       </div>
 </section>
 <!--Header Upper-->
@@ -162,6 +75,70 @@
 </div>
 
 <!--====  End of Page Slider  ====-->
+
+<!-- Clinica/SV Section -->
+<section class="team-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div class="team-members tab-pane fade in active row" id="doctor">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="team-person text-center">
+                                @foreach ($cv as $cvpri)
+                                <h6>Dr. Juan Carlos Paillet</h6>
+                                <a href="#openModal">
+                                  <img src="{{url('/')}}/img/{{$cvpri->imagen}}" alt="team" class="foto2 img-responsive">
+                                </a> 
+                                @endforeach                               
+                            </div>
+                            <!-- Modal 1 -->
+                            <div id="openModal" class="modalDialog">
+                                <div>
+                                    @foreach ($cv as $cvpri)
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <div>
+                                        <img src="{{url('/')}}/img/{{$cvpri->imagen}}" class="foto">
+                                        <h2 class="popTitulo">Dr. Juan Carlos Paillet</h2>
+                                    </div>
+                                    <div class="historia">
+                                        <p>{{ $cvpri->texto }}</p>
+                                    </div>
+                                    @endforeach
+
+                                    <h2>Antecedentes de cirugía en general.</h2>
+                                    @foreach ($cv_lista as $cvlis)            
+                                    <ul>
+                                        <li>{{ $cvlis->texto }}</li>
+                                    </ul>
+                                    @endforeach
+                                    
+                                    <h2>Antecedentes de cirugía plástica</h2>
+                                    @foreach ($cv_plastica as $cvplas)
+                                    <ul>
+                                        <li>{{ $cvplas->texto }}</li>
+                                    </ul>
+                                    @endforeach
+                                </div>
+                            </div>
+                            <!-- END Modal 1 -->
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="team-person text-center">
+                                <h6>Clínica</h6>
+                                <a href="#openModal2">
+                                    <img src="img/clinica.jpg" alt="team" class="foto2 img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
 
 <!--Service Section-->
 <section class="service-section bg-gray section">

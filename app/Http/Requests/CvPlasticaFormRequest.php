@@ -4,7 +4,7 @@ namespace paillet\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CvFormRequest extends FormRequest
+class CvPlasticaFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,7 @@ class CvFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'imagen'=>'mimes:jpeg,bmp,png',
-            'texto'=>'required|max:1000'
+            'texto'=>'required|max:500'
         ];
     }
 }

@@ -3840,10 +3840,11 @@ li {
 .foto2 {
   border: 5px outset #41B0B8;
   border-radius: 75%;
-  max-height: 400px; 
-  max-width: 400px;
 }
 
+.foto2:hover {
+
+}
 
 /* -------------POP UP------------- */
 .modalDialog {

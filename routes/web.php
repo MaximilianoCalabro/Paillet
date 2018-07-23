@@ -26,6 +26,7 @@ Route::resource('/admin/clinica','ClinicaController');
 Route::resource('/admin/contacto','ContactoController');
 Route::resource('/admin/cv','CvController');
 Route::resource('/admin/cv_lista','CvListaController');
+Route::resource('/admin/cv_plastica','CvPlasticaController');
 Route::resource('/admin/inicio','InicioController');
 
 Route::get('/', 'PaginaController@show');

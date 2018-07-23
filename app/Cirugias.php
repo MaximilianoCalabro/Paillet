@@ -18,8 +18,7 @@ class Cirugias extends Model
 		'pre_ope',
 		'procedimientos',
 		'post_ope',
-		'imagen',
-		'imagen_slider'
+		'imagen'
 	];
 
 	protected $guarded =[

@@ -107,8 +107,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> CV Texto</a></li>
-                <li><a href="almacen/categoria"><i class="fa fa-circle-o"></i> CV Lista</a></li>
+                <li><a href="/admin/cv"><i class="fa fa-circle-o"></i> CV</a></li>
+                <li><a href="/admin/cv_lista"><i class="fa fa-circle-o"></i> Cirugía en general</a></li>
+                <li><a href="/admin/cv_plastica"><i class="fa fa-circle-o"></i> Cirugía plástica</a></li>
               </ul>
             </li>
 
@@ -119,7 +120,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/admin/clinica"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 

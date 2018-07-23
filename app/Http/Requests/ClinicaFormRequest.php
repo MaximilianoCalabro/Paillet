@@ -24,7 +24,7 @@ class ClinicaFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'imagen'=>'required|max:250',
+            'imagen'=>'mimes:jpeg,bmp,png',
             'texto'=>'required|max:500'
         ];
     }

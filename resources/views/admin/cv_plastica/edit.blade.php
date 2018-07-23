@@ -13,18 +13,11 @@
                 </div>
             @endif
 
-            {!!Form::model($cv,['method'=>'PATCH','route'=>['cv.update',$cv->id_cv],'files'=>'true'])!!}
+            {!!Form::model($cv_plastica,['method'=>'PATCH','route'=>['cv_plastica.update',$cv_plastica->id_cv_plastica],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen CV</label>
-                <input type="file" name="imagen" class="form-control" value="{{$cv->imagen}}">
-                @if (($cv->imagen)!='')
-                    <img src="{{asset('img/'.$cv->imagen)}}" height="150px" width="150px">
-                @endif
-            </div>
-            <div class="form-group">
-                <label for="texto">Texto</label>
-                <textarea type="text" rows="5" name="texto" class="form-control" value="{{$cv->texto}}" >{{$cv->texto}}"</textarea>
+                <label for="texto">CV Antecedentes de cirugía plástica</label>
+                <textarea type="text" rows="5" name="texto" class="form-control" value="{{$cv_plastica->texto}}" >{{$cv_plastica->texto}}"</textarea>
             </div>
 
             <div class="form-group">

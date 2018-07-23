@@ -14,8 +14,11 @@ class PaginaController extends Controller
 		$cirugia=DB::table('cirugia')->get();
 		$cirugia_slider=DB::table('cirugia_slider')->get();
 		$contacto=DB::table('contacto')->get();
+		$cv=DB::table('cv')->get();
+		$cv_lista=DB::table('cv_lista')->get();
+		$cv_plastica=DB::table('cv_plastica')->get();
 
-		return view('index',["inicio"=>$inicio, "cirugia"=>$cirugia, "cirugia_slider"=>$cirugia_slider, "contacto"=>$contacto]);
+		return view('index',["inicio"=>$inicio, "cirugia"=>$cirugia, "cirugia_slider"=>$cirugia_slider, "contacto"=>$contacto, "cv"=>$cv, "cv_lista"=>$cv_lista, "cv_plastica"=>$cv_plastica]);
 
 	}
 }

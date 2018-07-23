@@ -29,8 +29,7 @@ class CirugiasFormRequest extends FormRequest
             'pre_ope'=>'required|max:500',
             'procedimientos'=>'required|max:500',
             'post_ope'=>'required|max:500',
-            'imagen'=>'required|max:250',
-            'imagen_slider'=>'required|max:250'
+            'imagen'=>'mimes:jpeg,bmp,png'
         ];
     }
 }

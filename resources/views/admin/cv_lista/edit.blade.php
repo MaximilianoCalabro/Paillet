@@ -13,14 +13,11 @@
                 </div>
             @endif
 
-            {!!Form::model($inicio,['method'=>'PATCH','route'=>['inicio.update',$inicio->id_inicio],'files'=>'true'])!!}
+            {!!Form::model($cv_lista,['method'=>'PATCH','route'=>['cv_lista.update',$cv_lista->id_cv_lista],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen Slider</label>
-                <input type="file" name="imagen" class="form-control" value="{{$inicio->imagen}}">
-                @if (($inicio->imagen)!='')
-                    <img src="{{asset('img/'.$inicio->imagen)}}" height="150px" width="150px">
-                @endif
+                <label for="texto">CV Antecedentes de cirugía en general</label>
+                <textarea type="text" rows="5" name="texto" class="form-control" value="{{$cv_lista->texto}}" >{{$cv_lista->texto}}"</textarea>
             </div>
 
             <div class="form-group">
