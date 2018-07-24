@@ -11,7 +11,7 @@
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
-					<th>Imágen Slider (300 x 168 px)</th>
+					<th>Imágen Slider (900 x 900 px)</th>
 					<th>Título</th>
 					<th>Texto</th>	
 					<th>Direccion</th>				

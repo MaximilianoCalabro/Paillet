@@ -16,7 +16,7 @@
             {!!Form::model($cirugia_slider,['method'=>'PATCH','route'=>['cirugia_slider.update',$cirugia_slider->id_cirugia_slider],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen Slider (300 x 168 px)</label>
+                <label for="imagen">Imágen Slider (900 x 900 px)</label>
                 <input type="file" name="imagen" class="form-control" value="{{$cirugia_slider->imagen}}">
                 @if (($cirugia_slider->imagen)!='')
                     <img src="{{asset('img/'.$cirugia_slider->imagen)}}" height="150px" width="150px">
@@ -35,7 +35,7 @@
                   <br>
                   <select name="direccion">
                         <option value="-">------------</option> 
-                        <option value="/pagina/parpado">Parpados</option> 
+                        <option value="/pagina/parpados">Parpados</option> 
                         <option value="/pagina/nariz">Nariz</option>
                         <option value="/pagina/facial">Facial</option>
                         <option value="/pagina/mamarias">Mamarias</option>

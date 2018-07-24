@@ -29,12 +29,13 @@ Route::resource('/admin/cv_lista','CvListaController');
 Route::resource('/admin/cv_plastica','CvPlasticaController');
 Route::resource('/admin/inicio','InicioController');
 
-Route::get('/pagina/parpados', 'PaginaController@show');
-Route::get('/pagina/botox', 'PaginaController@show');
-Route::get('/pagina/corporal', 'PaginaController@show');
-Route::get('/pagina/facial', 'PaginaController@show');
-Route::get('/pagina/nariz', 'PaginaController@show');
-Route::get('/pagina/botox', 'PaginaController@show');
-Route::get('/pagina/otros', 'PaginaController@show');
+Route::resource('/pagina/parpados', 'ParpadosController');
+Route::resource('/pagina/nariz', 'NarizController');
+Route::resource('/pagina/facial', 'FacialController');
+Route::resource('/pagina/mamarias', 'MamariasController');
+Route::resource('/pagina/corporal', 'CorporalController');
+Route::resource('/pagina/botox', 'BotoxController');
+Route::resource('/pagina/otros', 'OtrosController');
+
 
 Route::get('/', 'PaginaController@show');

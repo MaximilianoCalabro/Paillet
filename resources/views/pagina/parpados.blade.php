@@ -1,15 +1,14 @@
 @extends ('index')
 @section ('cirugia')
-    @foreach ($cirugias as $ciru)
     <div class="section-title text-center">
-      <h3>{{ $ciru->pertenece }}</h3>
+      <h3>{{ $cirugias[0]->pertenece }}</h3>
       <br>
     </div>
     <!-- Nav tabs -->
     <div class="tabs">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
-                <a href="#blefaroplastia"  data-toggle="tab">{{ $ciru->nombre }}</a>
+                <a href="#blefaroplastia"  data-toggle="tab">{{ $cirugias[0]->nombre }}</a>
             </li>
         </ul>
     </div>
@@ -17,7 +16,7 @@
     <div class="tab-content">
         <div class="service-box tab-pane fade in active row" id="dormitory">
             <div class="col-md-6">
-                <img class="img-responsive" src="img/service-one.jpg" alt="service-image">
+                <img class="img-responsive" src="{{url('/')}}/img/{{$cirugias[0]->imagen}}" alt="service-image">
             </div>
             <div class="col-md-6"> <!-- Preguntas -->
                 <div class="contents">
@@ -33,7 +32,7 @@
                                         </h4>
                                     </div>
                                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">{{ $ciru->que_es }}</div>
+                                        <div class="panel-body">{{ $cirugias[0]->que_es }}</div>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
@@ -46,7 +45,7 @@
                                         </h4>
                                     </div>
                                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">{{ $ciru->pre_ope }}</div>
+                                        <div class="panel-body">{{ $cirugias[0]->pre_ope }}</div>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
@@ -59,7 +58,7 @@
                                         </h4>
                                     </div>
                                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">{{ $ciru->procedimientos }}</div>
+                                        <div class="panel-body">{{ $cirugias[0]->procedimientos }}</div>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
@@ -72,7 +71,7 @@
                                         </h4>
                                     </div>
                                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                        <div class="panel-body">{{ $ciru->post_ope }}</div>
+                                        <div class="panel-body">{{ $cirugias[0]->post_ope }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -121,5 +120,4 @@
         </div>
         <!--End single tab content-->
     </div>
-    @endforeach
 @endsection

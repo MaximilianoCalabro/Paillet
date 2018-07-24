@@ -16,7 +16,7 @@
         {!!Form::open(array('url'=>'/admin/cirugia_slider','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
-                <label for="imagen">Imágen Slider (300 x 168 px)</label>
+                <label for="imagen">Imágen Slider (900 x 900 px)</label>
                 <input type="file" name="imagen" class="form-control">
             </div>
             <div class="form-group">
@@ -32,7 +32,7 @@
                   <br>
                   <select name="direccion">
                         <option value="-">------------</option> 
-                        <option value="/pagina/parpado">Parpados</option> 
+                        <option value="/pagina/parpados">Parpados</option> 
                         <option value="/pagina/nariz">Nariz</option>
                         <option value="/pagina/facial">Facial</option>
                         <option value="/pagina/mamarias">Mamarias</option>

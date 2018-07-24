@@ -1,29 +1,29 @@
-  @foreach ($posts as $post)
-        <div class="col-md-12 blogShort">
-            <h2><a href="{{URL::action('BlogController@getPost',$post->post_id)}}">{{$post->title}}</a></h2>
-            <div class="row row-article">
-                <div class="col-md-12">
-                    {{--<img src="/../../photos/entrada/{!! $post->image !!}" width="250px" height="250px"  align="left"  alt="post img" class="pull-left img-responsive img-thumbnail thumb margin10">--}}
-                    <article>
-                        <div >
-                            {!! $post->summary !!}
-                        </div>
-                    </article>
-                    <a href="{{URL::action('BlogController@getPost',$post->post_id)}}" class="btn btn-default" role="button">Leer más</a>
-                </div>
-            </div>
-            <div class="row row-info">
-                <div class="col-md-12">
-                    <p>
-                        <i class="fa fa-user-o" aria-hidden="true"></i> por <a href="#">{{$post->username}}</a>
-                        | <i class="fa fa-calendar" aria-hidden="true"></i> {{ $post->updated_at }}
-                        | <i class="disqus-comment-count" data-disqus-url="{{URL::action('BlogController@getPost',$post->post_id)}}" aria-hidden="true"></i>
-                    <script id="dsq-count-scr" src="https://mates-y-papeles.disqus.com/count.js" async></script>
-                    </p>
-                </div>
+@foreach ($posts as $post)
+    <div class="col-md-12 blogShort">
+        <h2><a href="{{URL::action('BlogController@getPost',$post->post_id)}}">{{$post->title}}</a></h2>
+        <div class="row row-article">
+            <div class="col-md-12">
+                {{--<img src="/../../photos/entrada/{!! $post->image !!}" width="250px" height="250px"  align="left"  alt="post img" class="pull-left img-responsive img-thumbnail thumb margin10">--}}
+                <article>
+                    <div >
+                        {!! $post->summary !!}
+                    </div>
+                </article>
+                <a href="{{URL::action('BlogController@getPost',$post->post_id)}}" class="btn btn-default" role="button">Leer más</a>
             </div>
         </div>
-        @endforeach
+        <div class="row row-info">
+            <div class="col-md-12">
+                <p>
+                    <i class="fa fa-user-o" aria-hidden="true"></i> por <a href="#">{{$post->username}}</a>
+                    | <i class="fa fa-calendar" aria-hidden="true"></i> {{ $post->updated_at }}
+                    | <i class="disqus-comment-count" data-disqus-url="{{URL::action('BlogController@getPost',$post->post_id)}}" aria-hidden="true"></i>
+                <script id="dsq-count-scr" src="https://mates-y-papeles.disqus.com/count.js" async></script>
+                </p>
+            </div>
+        </div>
+    </div>
+@endforeach
 
 
          <h2><a href="{{ url('/pagina')}}/{{$blade->post_id }}"> {!! $post->title !!}</a></h2>

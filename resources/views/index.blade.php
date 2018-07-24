@@ -218,8 +218,8 @@
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="contact-area">
                     <div class="section-title text-center">
-                        <h3><span>Saque su</span>
-                            TURNO
+                        <h3>
+                            CONTACTENOS
                         </h3>
                     </div>
                     <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
@@ -233,10 +233,6 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="email" name="Correo" placeholder="Correo" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="Date" placeholder="Date" required="" id="datepicker">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -260,24 +256,6 @@
                                         </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
-                                    <input id="appt-time" type="time" name="appt-time">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- <div class="form-group">
-                                    <select name="subject">
-                                        <option>Doctor</option>
-                                        <option>Diagnostic</option>
-                                        <option>Psychological</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <select name="subject">
-                                        <option>Departments</option>
-                                        <option>Diagnostic</option>
-                                        <option>Psychological</option>
-                                    </select>
-                                </div> -->
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">

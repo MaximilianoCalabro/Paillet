@@ -1720,8 +1720,9 @@ li {
 
 .team-members .team-person img {
   border-radius: 5px;
-  width: 100%;
-  margin-left: 15%;
+  width: 300px;
+  height: 300px;
+  margin-left: 28%;
 }
 
 .team-members .team-person h6 {

@@ -53,7 +53,7 @@ class ContactoController extends Controller
 		$contacto->whatsapp=$request->get('whatsapp');
 		$contacto->correo=$request->get('correo');
 		$contacto->update();
-		return Redirect::to('admin./ontacto');
+		return Redirect::to('admin/contacto');
 	}
 	public function destroy($id)
 	{
