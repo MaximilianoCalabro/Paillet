@@ -31,6 +31,7 @@ class CirugiasController extends Controller
 	public function store(CirugiasFormRequest $request)
 	{
 		$cirugias=new Cirugias;
+		$cirugias->pertenece=$request->get('pertenece');
 		$cirugias->nombre=$request->get('nombre');
 		$cirugias->que_es=$request->get('que_es');
 		$cirugias->pre_ope=$request->get('pre_ope');
@@ -59,7 +60,8 @@ class CirugiasController extends Controller
 	}
 	public function update(CirugiasFormRequest $request, $id)
 	{
-		$cirugia=Cirugia::findOrFail($id);
+		$cirugias=Cirugias::findOrFail($id);
+		$cirugias->pertenece=$request->get('pertenece');
 		$cirugias->nombre=$request->get('nombre');
 		$cirugias->que_es=$request->get('que_es');
 		$cirugias->pre_ope=$request->get('pre_ope');

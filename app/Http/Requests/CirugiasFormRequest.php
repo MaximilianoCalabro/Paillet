@@ -24,11 +24,12 @@ class CirugiasFormRequest extends FormRequest
     public function rules()
     {
         return [
+            'pertenece'=>'required|max:50',
             'nombre'=>'required|max:50',
-            'que_es'=>'required|max:500',
-            'pre_ope'=>'required|max:500',
-            'procedimientos'=>'required|max:500',
-            'post_ope'=>'required|max:500',
+            'que_es'=>'required|max:1000',
+            'pre_ope'=>'required|max:1000',
+            'procedimientos'=>'required|max:1000',
+            'post_ope'=>'required|max:1000',
             'imagen'=>'mimes:jpeg,bmp,png'
         ];
     }

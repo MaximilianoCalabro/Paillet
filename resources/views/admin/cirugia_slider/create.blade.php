@@ -28,6 +28,20 @@
                   <input type="text" name="texto" class="form-control" placeholder="Texto...">
             </div>
             <div class="form-group">
+                <label for="direccion">Direccion</label>
+                  <br>
+                  <select name="direccion">
+                        <option value="-">------------</option> 
+                        <option value="/pagina/parpado">Parpados</option> 
+                        <option value="/pagina/nariz">Nariz</option>
+                        <option value="/pagina/facial">Facial</option>
+                        <option value="/pagina/mamarias">Mamarias</option>
+                        <option value="/pagina/corporal">Corporal</option>
+                        <option value="/pagina/botox">Botox</option>
+                        <option value="/pagina/otros">Otros</option>
+                  </select>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>
             </div>

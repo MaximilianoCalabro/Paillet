@@ -33,6 +33,7 @@ class CirugiaSliderController extends Controller
 		$cirugia_slider=new CirugiaSlider;
 		$cirugia_slider->texto=$request->get('texto');
 		$cirugia_slider->titulo=$request->get('titulo');
+		$cirugia_slider->direccion=$request->get('direccion');
 		if (Input::hasFile ('imagen')){
 			$file=Input::file('imagen');
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
@@ -54,6 +55,7 @@ class CirugiaSliderController extends Controller
 		$cirugia_slider=CirugiaSlider::findOrFail($id);
 		$cirugia_slider->texto=$request->get('texto');
 		$cirugia_slider->titulo=$request->get('titulo');
+		$cirugia_slider->direccion=$request->get('direccion');
 		if (Input::hasFile ('imagen')){
 			$file=Input::file('imagen');
 			$file->move(public_path().'/img/',$file->getClientOriginalName());

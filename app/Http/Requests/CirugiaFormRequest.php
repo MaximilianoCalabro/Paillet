@@ -25,7 +25,7 @@ class CirugiaFormRequest extends FormRequest
     {
         return [
             'titulo'=>'required|max:50',
-            'texto'=>'required|max:500'
+            'texto'=>'required|max:500',
         ];
     }
 }

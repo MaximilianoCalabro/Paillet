@@ -13,6 +13,7 @@ class Cirugias extends Model
 	public $timestamps=false;
 
 	protected $fillable =[
+		'pertenece',
 		'nombre',
 		'que_es',
 		'pre_ope',

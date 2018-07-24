@@ -13,13 +13,15 @@
 				<thead>
 					<th>Imágen Slider (300 x 168 px)</th>
 					<th>Título</th>
-					<th>Texto</th>					
+					<th>Texto</th>	
+					<th>Direccion</th>				
 				</thead>
                @foreach ($cirugia_slider as $cat)
 				<tr>
 					<td><img src="{{asset('img/'.$cat->imagen)}}" height="150px" width="150px"> </td>
 					<td>{{ $cat->titulo }}</td>
-					<td>{{ $cat->texto }}</td>					
+					<td>{{ $cat->texto }}</td>		
+					<td>{{ $cat->direccion}}</td>			
 					<td>
 						<a href="{{URL::action('CirugiaSliderController@edit',$cat->id_cirugia_slider)}}"><button class="btn btn-info">Editar</button></a>
                         <a href="" data-target="#modal-delete-{{$cat->id_cirugia_slider}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>

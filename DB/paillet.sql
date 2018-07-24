@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-07-2018 a las 13:57:07
+-- Tiempo de generación: 24-07-2018 a las 14:03:03
 -- Versión del servidor: 10.1.33-MariaDB
 -- Versión de PHP: 7.2.6
 
@@ -39,7 +39,7 @@ CREATE TABLE `cirugia` (
 --
 
 INSERT INTO `cirugia` (`id_cirugia`, `texto`, `titulo`) VALUES
-(1, 'Texto de CIRUGIA', 'Titulo de CIRUGIA');
+(1, 'Aqui se puede enterar en que consiste cada cirugia', 'Cirugias Ofrecidas');
 
 -- --------------------------------------------------------
 
@@ -49,6 +49,7 @@ INSERT INTO `cirugia` (`id_cirugia`, `texto`, `titulo`) VALUES
 
 CREATE TABLE `cirugias` (
   `id_cirugias` int(11) NOT NULL,
+  `pertenece` varchar(50) COLLATE utf8_bin NOT NULL,
   `nombre` varchar(50) COLLATE utf8_bin NOT NULL,
   `que_es` text COLLATE utf8_bin NOT NULL,
   `pre_ope` text COLLATE utf8_bin NOT NULL,
@@ -61,8 +62,9 @@ CREATE TABLE `cirugias` (
 -- Volcado de datos para la tabla `cirugias`
 --
 
-INSERT INTO `cirugias` (`id_cirugias`, `nombre`, `que_es`, `pre_ope`, `procedimientos`, `post_ope`, `imagen`) VALUES
-(1, 'Bobis', 'bobisbobisbobisbobis', 'bobisbobisbobisbobis', 'bobisbobisbobisbobis', 'bobisbobisbobisbobisbobis', 'img.jpg');
+INSERT INTO `cirugias` (`id_cirugias`, `pertenece`, `nombre`, `que_es`, `pre_ope`, `procedimientos`, `post_ope`, `imagen`) VALUES
+(1, 'Parpados', 'Blefaroplastia', 'Es la cirugía de los párpados, consiste en la resección de la piel excedente (parpado superior), y corrección de las bolsas grasas salientes o abultadas y exceso de piel (parpado inferior), que dan el aspecto de cansado en el rostro de las personas. NO corrige las patas de gallo, ni da un rejuvenecimiento facial total. Para esto se la puede combinar con otros procedimientos (lifting, o con toxina botulínica, o con el levantamiento de las cejas, entre otros). La cicatriz es mínima y queda oculta en los propios pliegues del parpado superior y debajo de las pestañas en el parpado inferior. Es la cirugía más solicitada por hombre y mujeres, entre 35 a 60 años, ya que da una mejoría local y facial, con una rápida re inserción social y laboral.', 'El día de su cirugía NO usar maquillaje y llevar anteojos de sol para el momento de su alta hospitalaria.  Como en todo procedimiento quirúrgico, recomendamos suspender toda sustancia que aumente el sangrado intra-operatorio, como son las aspirinas (aspirinetas, bayaspirinas), complejos vitamínicos, alcohol y el tabaco fundamentalmente. Esta suspensión recomendamos sea por 10 - 15 días antes de su cirugía y mantenerla durante la primer semana post-operatoria. Así mismo recomendamos tomar Árnica montana en los días previos a su procedimiento, para disminuir el sangrado intra-operatorio y acelerar su recuperación post-quirúrgica. Sugerimos nos comunique si está padeciendo algún proceso infeccioso (fiebre, gripe, diarrea, etc.) o si está recibiendo cualquier otro tipo de medicación, esto es MUY importante.', 'Se realiza con anestesia local y sedación endovenosa, la cual relaja y hace dormir placidamente al paciente, durante todo el procedimiento (2 horas aproximadamente). Se reseca el exceso cutáneo del parpado superior y se corrige el abultamiento de las bolsas grasas, de ser necesario. En los párpados inferiores, la resección cutánea es más cautelosa y se corrige el abultamiento de las bolsas que suele ser más marcada. Existen situaciones extraordinarias o imponderables, como en todo procedimiento quirúrgico, que serán explicadas por el profesional tratante.', 'Se da el alta al recuperarse el paciente, en las primeras horas del post operatorio. Se recomienda la aplicación de compresas frescas en las primeras 72 horas. Se puede realizar el lavado de los ojos, SIN fricción alguna. Se indica descansar con la cabeza elevada, para disminuir el edema en los primeros días. Recomendamos el uso de crema protectora solar y el uso de anteojos para sol, por 30 días. Se pueden maquillar los ojos, a los 7 o 10 días aproximadamente.', 'parpados.jpg'),
+(2, 'Nariz', 'Rinoplastia', 'La nariz es el punto central de la cara, por lo cual siempre preservamos el equilibrio estético de la misma, sin olvidar su importante aspecto funcional. Realizamos una minuciosa evaluación de las diferentes partes que componen la nariz (punta, dorso, raíz, base, narinas, columella) y luego una evaluación en el contexto general de la cara. Teniendo siempre en mente que se obtendrá una mejoría de la forma nasal, que se adecue a los rasgos faciales y preserve o mejore su función. Es una de las cirugías que brinda una mejoría en la imagen personal, ayudando a superar situaciones que elevan la autoestima del paciente.', 'Como en todo procedimiento quirúrgico, recomendamos suspender toda sustancia que aumente el sangrado intra-operatorio, como son las aspirinas (aspirinetas, bayaspirinas), complejos vitamínicos, alcohol y el tabaco fundamentalmente Esta suspensión recomendamos sea por 10 a 15 días antes de su cirugía y mantenerla durante la primer semana post-operatoria. Así mismo recomendamos tomar Árnica montana en los días previos a su procedimiento, para disminuir el sangrado intra-operatorio y acelerar su recuperación post-quirúrgica. Sugerimos nos comunique si está padeciendo algún proceso infeccioso (fiebre, gripe, diarrea, etc.) o si está recibiendo cualquier otro tipo de medicación, esto es MUY importante. Recuerde que al despertar de su cirugía, probablemente deberá respirar por su boca, esto lo ayudará mucho.', 'Se realiza con anestesia local y sedación endovenosa, o con anestesia general. El 95 % se realizan por vía endonasal (por dentro de la nariz, sin cicatriz visible). Cada nariz requiere de una técnica y tratamiento individual y especializado. Lo más frecuente es la reducción del dorso nasal, la elevación de la punta y el angostamiento de la misma. Es muy frecuente la realización de alguna corrección funcional, a nivel del tabique (septum) o cornetes, para mejorar el paso de aire. Si se ha realizado alguna modificación en el tabique se deben colocar tapones nasales temporales (48 horas aproximadamente). Existen situaciones extraordinarias o imponderables, como en todo procedimiento quirúrgico, que deben ser explicadas por el profesional tratante.', 'Se debe usar una férula de yeso o cinta adhesiva por 7 a 15 días aproximadamente, así como recomendamos dormir con la cabeza elevada con dos almohadas, para disminuir el edema. Se indica analgésico en forma preventiva. Se evitan los esfuerzos, movimientos bruscos y mantener la cabeza abajo; en los primeros días. Recomendamos evitar la exposición solar directa por 30 días, de exponerse al sol, utilizar crema bloqueadora solar.', 'nariz.jpg');
 
 -- --------------------------------------------------------
 
@@ -74,21 +76,22 @@ CREATE TABLE `cirugia_slider` (
   `id_cirugia_slider` int(11) NOT NULL,
   `imagen` varchar(250) COLLATE utf8_bin NOT NULL,
   `texto` text COLLATE utf8_bin NOT NULL,
-  `titulo` varchar(250) COLLATE utf8_bin NOT NULL
+  `titulo` varchar(250) COLLATE utf8_bin NOT NULL,
+  `direccion` varchar(250) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Volcado de datos para la tabla `cirugia_slider`
 --
 
-INSERT INTO `cirugia_slider` (`id_cirugia_slider`, `imagen`, `texto`, `titulo`) VALUES
-(3, 'parpados.jpg', 'Texto sobre PARPADOS', 'PARPADOS'),
-(4, 'nariz.jpg', 'Texto sobre NARIZ', 'NARIZ'),
-(5, 'anti-arruga.jpg', 'Texto sobre FACIAL', 'FACIAL'),
-(6, 'mamarias.jpg', 'Texto sobre MAMARIAS', 'MAMARIAS'),
-(7, 'corporal.jpg', 'Texto sobre CORPORAL', 'CORPORAL'),
-(8, 'botox.jpg', 'Texto sobre BOTOX', 'BOTOX'),
-(9, 'orejas.jpg', 'Texto sobre OTROS', 'OTROS');
+INSERT INTO `cirugia_slider` (`id_cirugia_slider`, `imagen`, `texto`, `titulo`, `direccion`) VALUES
+(3, 'parpados.jpg', 'Texto sobre PARPADOS', 'PARPADOS', '/pagina/parpado'),
+(4, 'nariz.jpg', 'Texto sobre NARIZ', 'NARIZ', '/pagina/nariz'),
+(5, 'anti-arruga.jpg', 'Texto sobre FACIAL', 'FACIAL', '/pagina/facial'),
+(6, 'mamarias.jpg', 'Texto sobre MAMARIAS', 'MAMARIAS', '/pagina/mamarias'),
+(7, 'corporal.jpg', 'Texto sobre CORPORAL', 'CORPORAL', '/pagina/corporal'),
+(8, 'botox.jpg', 'Texto sobre BOTOX', 'BOTOX', '/pagina/botox'),
+(9, 'orejas.jpg', 'Texto sobre OTROS', 'OTROS', '/pagina/otros');
 
 -- --------------------------------------------------------
 
@@ -101,6 +104,15 @@ CREATE TABLE `clinica` (
   `imagen` varchar(250) COLLATE utf8_bin NOT NULL,
   `texto` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `clinica`
+--
+
+INSERT INTO `clinica` (`id_clinica`, `imagen`, `texto`) VALUES
+(1, 'clinica.jpg', 'Estamos ubicados en la zona céntrica de la ciudad de Santa Fe, en la nueva peatonal San Martín Norte (San Martín 3067 entre Crespo y Suipacha, a escasas cuadras de los Sanatorios y Clínicas más importantes, en plena área comercial y financiera. Con fácil y rápido acceso, desde los diferente puntos de ingresos de la ciudad y a escasas 3 cuadras de la terminal de ómnibus.\r\nContamos con todas la comodidades, para hacer su visita, agradable y placentera. Siendo un lugar propio y exclusivo, dando calidez y privacidad a todos nuestros pacientes.'),
+(2, '2.jpg', 'Nuestra Clínica tiene 5 consultorios para la realización de consultas, propiamente dichas, examen de pacientes, fotografías, y cuidados post operatorios, entre otros. Tenes una sala para la realización de cirugías menores (extracción de lunares, quistes, plastias de cicatrices, etc.), aplicaciones de Botox, Dysport, Acido Hialurónico, microdermoabrasion, peeling, etc.\r\n\r\nAdemás disponemos de 8 gabinetes, individuales, de uso exclusivo para nuestro gabinete estético. En el cual se realizan todo tipo de tratamientos NO quirúrgicos, para mejorar contorno corporal, y cosmética facial, entre otros. Así mismo brindamos terapias post operatorias (drenaje linfático, ultrasonidos, etc.) a todos nuestros pacientes, como parte de nuestros servicios exclusivos.\"\"'),
+(3, '3.jpg', 'Realizamos TODOS nuestros procedimientos quirúrgicos mayores (aumento mamario con prótesis, liposucción, parpados, lifting, levantamiento mamarios, narices, dermolipectomias, etc.) en reconocida y moderna clínica, de Santa Fe. La cual se haya debidamente autorizada, habilitada, actualizada y equipada para realizar procedimientos quirúrgicos de alta complejidad (cirugías cardiacas).Lo cual nos permite un cómodo, confiable y seguro lugar de trabajo, para realizar nuestros múltiples procedimientos. La misma cuenta con confortables y cómodas habitaciones. Que hacen de su estadía, un momento agradable y placentero. Ubicada en la zona de mayor concentración de centros médicos y sanatorios de la ciudad de Santa Fe. A pocas cuadras de modernos y confortables hoteles; así como de fácil acceso por los diversos medios de transportes locales y de larga distancia.\"\"');
 
 -- --------------------------------------------------------
 
@@ -351,7 +363,7 @@ ALTER TABLE `cirugia_slider`
 -- AUTO_INCREMENT de la tabla `clinica`
 --
 ALTER TABLE `clinica`
-  MODIFY `id_clinica` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_clinica` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `contacto`
@@ -363,7 +375,7 @@ ALTER TABLE `contacto`
 -- AUTO_INCREMENT de la tabla `cv`
 --
 ALTER TABLE `cv`
-  MODIFY `id_cv` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_cv` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `cv_lista`

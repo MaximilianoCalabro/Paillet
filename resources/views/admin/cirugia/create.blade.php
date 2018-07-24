@@ -24,6 +24,10 @@
                   <input type="text" name="texto" class="form-control" placeholder="Texto...">
             </div>
             <div class="form-group">
+                <label for="direccion">direccion</label>
+                <input type="text" name="direccion" class="form-control" placeholder="direccion...">
+            </div>
+            <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>
             </div>

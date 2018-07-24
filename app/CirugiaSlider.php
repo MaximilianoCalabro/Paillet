@@ -15,7 +15,8 @@ class CirugiaSlider extends Model
 	protected $fillable =[
 		'imagen',
 		'texto',
-		'titulo'
+		'titulo',
+		'direccion'
 	];
 
 	protected $guarded =[

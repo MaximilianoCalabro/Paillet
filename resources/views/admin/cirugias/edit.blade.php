@@ -16,6 +16,20 @@
             {!!Form::model($cirugias,['method'=>'PATCH','route'=>['cirugias.update',$cirugias->id_cirugias],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
+                  <label for="pertenece">Pertenece a</label>
+                  <br>
+                  <select name="pertenece">
+                        <option value="-">------------</option> 
+                        <option value="Parpados">Parpados</option> 
+                        <option value="Nariz">Nariz</option>
+                        <option value="Facial">Facial</option>
+                        <option value="Mamarias">Mamarias</option>
+                        <option value="Corporal">Corporal</option>
+                        <option value="Botox">Botox</option>
+                        <option value="Otros">Otros</option>
+                  </select>
+            </div>
+            <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" class="form-control" value="{{$cirugias->nombre}}" placeholder="Nombre">
             </div>            
@@ -28,8 +42,8 @@
                 <input type="text" name="pre_ope" class="form-control" value="{{$cirugias->pre_ope}}" placeholder="Pre-Operacion">
             </div>            
             <div class="form-group">
-                <label for="prodecimientos">Prodecimientos</label>
-                <input type="text" name="prodecimientos" class="form-control" value="{{$cirugias->prodecimientos}}" placeholder="Prodecimientos">
+                <label for="procedimientos">Prodecimientos</label>
+                <input type="text" name="procedimientos" class="form-control" value="{{$cirugias->procedimientos}}" placeholder="Prodecimientos">
             </div>            
             <div class="form-group">
                 <label for="post_ope">Post_Operacion</label>

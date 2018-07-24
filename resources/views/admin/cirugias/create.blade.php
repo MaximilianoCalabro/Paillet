@@ -16,6 +16,20 @@
             {!!Form::open(array('url'=>'/admin/cirugias','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
+                  <label for="pertenece">Pertenece a</label>
+                  <br>
+                  <select name="pertenece">
+                        <option value="-">------------</option> 
+                        <option value="Parpados">Parpados</option> 
+                        <option value="Nariz">Nariz</option>
+                        <option value="Facial">Facial</option>
+                        <option value="Mamarias">Mamarias</option>
+                        <option value="Corporal">Corporal</option>
+                        <option value="Botox">Botox</option>
+                        <option value="Otros">Otros</option>
+                  </select>
+            </div>
+            <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" class="form-control" placeholder="Nombre...">
             </div>            
@@ -29,7 +43,7 @@
             </div>
             <div class="form-group">
                   <label for="procedimientos">Prodecimientos</label>
-                  <input type="text" name="procedimientos" class="form-control" placeholder="procedimientos...">
+                  <input type="text" name="procedimientos" class="form-control" placeholder="Procedimientos...">
             </div>
             <div class="form-group">
                   <label for="post_ope">Post-Operación</label>

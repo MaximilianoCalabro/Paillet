@@ -11,6 +11,7 @@
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
+					<th>Pertenece a</th>
 					<th>Nombre</th>
 					<th>¿Qué es?</th>
 					<th>Pre-operación</th>
@@ -20,6 +21,7 @@
 				</thead>
                @foreach ($cirugias as $cat)
 				<tr>
+					<td>{{ $cat->pertenece }}</td>
 					<td>{{ $cat->nombre }}</td>
 					<td>{{ $cat->que_es }}</td>
 					<td>{{ $cat->pre_ope }}</td>
