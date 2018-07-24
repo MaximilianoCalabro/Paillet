@@ -122,6 +122,25 @@
 			}
 		]
 	});
+	// Hero Slider 2
+	$('.hero-slider2').slick({
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		infinite: true,
+		speed: 300,
+		dots: true,
+		arrows: true,
+		fade: true,
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					arrows: false
+				}
+			}
+		]
+	});
 	// Item Slider
 	$('.items-container').slick({
 		infinite: true,
