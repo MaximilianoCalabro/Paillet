@@ -28,6 +28,7 @@ Route::resource('/admin/cv','CvController');
 Route::resource('/admin/cv_lista','CvListaController');
 Route::resource('/admin/cv_plastica','CvPlasticaController');
 Route::resource('/admin/inicio','InicioController');
+Route::resource('/admin/subseccion','SubseccionController');
 
 Route::resource('/pagina/parpados', 'ParpadosController');
 Route::resource('/pagina/nariz', 'NarizController');

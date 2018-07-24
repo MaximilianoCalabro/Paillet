@@ -13,7 +13,7 @@ class SubseccionFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class SubseccionFormRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'imagen'=>'mimes:jpeg,bmp,png',
         ];
     }
 }

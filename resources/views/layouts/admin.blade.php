@@ -97,6 +97,7 @@
                 <li><a href="/admin/cirugia"><i class="fa fa-circle-o"></i> Primera Parte</a></li>
                 <li><a href="/admin/cirugia_slider"><i class="fa fa-circle-o"></i> Slider</a></li>
                 <li><a href="/admin/cirugias"><i class="fa fa-circle-o"></i> Cirugías</a></li>
+                <li><a href="/admin/subseccion"><i class="fa fa-circle-o"></i> Slider Antes/Después</a></li>
               </ul>
             </li>
 
