@@ -84,7 +84,7 @@
                 <h2 class="tit_slider">Antes y Después</h2>
 
                 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
 
                     <!-- Wrapper for slides -->
                     @foreach($subseccion as $subs)  
@@ -100,10 +100,10 @@
                     </div>
                     @endforeach
                     <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
                       <span class="sr-only">Next</span>
                     </a>
                     </div>                
