@@ -13,16 +13,19 @@
                 </div>
             @endif
 
-            {!!Form::model($inicio,['method'=>'PATCH','route'=>['inicio.update',$inicio->id_inicio],'files'=>'true'])!!}
+            {!!Form::model($clinica,['method'=>'PATCH','route'=>['clinica.update',$clinica->id_clinica],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
                 <label for="imagen">Imágen Slider</label>
-                <input type="file" name="imagen" class="form-control" value="{{$inicio->imagen}}">
-                @if (($inicio->imagen)!='')
-                    <img src="{{asset('img/'.$inicio->imagen)}}" height="150px" width="150px">
+                <input type="file" name="imagen" class="form-control" value="{{$clinica->imagen}}">
+                @if (($clinica->imagen)!='')
+                    <img src="{{asset('img/'.$clinica->imagen)}}" height="150px" width="150px">
                 @endif
             </div>
-
+            <div class="form-group">
+                <label for="texto">Texto</label>
+                <textarea type="text" rows="5" name="texto" class="form-control" value="{{$clinica->texto}}" >{{$clinica->texto}}"</textarea>
+            </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>

@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>PAILLET</title>
 
-  
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,6 +25,10 @@
     <!-- Slider -->
     <script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')}}"></script>
     <script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')}}"></script>
+    
+    <!-- Slider PopUp-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 
@@ -130,6 +133,46 @@
                                     <img src="img/clinica.jpg" alt="team" class="foto2 img-responsive">
                                 </a>
                             </div>
+                            <!-- Modal 2 -->
+                            <div id="openModal2" class="modalDialog">
+                                <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+                                <ol class="carousel-indicators"></ol>
+
+                                <div class="carousel-inner" role="listbox">
+                                    
+                                @foreach($clinica as $clin) <!-- slider images -->
+                                        @if ($loop->first)
+                                        <div class="carousel-item active" style="background-image: url('{{url('/')}}/img/{{$clin->imagen}}');">
+                                            @else
+                                            <div class="carousel-item" style="background-image: url('{{url('/')}}/img/{{$clin->imagen}}');">
+                                        @endif
+                          
+                                        <div class="carousel-container">
+                                            <div class="carousel-content">
+                                                <p>{{$clin->texto}}</p>
+                                            </div>
+                                        </div>
+                                      
+                                        </div>
+                                @endforeach <!-- slider images -->
+
+                                </div>
+
+                                <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                                  <span class="sr-only">Anterior</span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                                  <span class="sr-only">Siguiente</span>
+                                </a>
+
+                              </div>
+                            </div>
+                            </div>
+                            <!-- END Modal 2 -->
                         </div>
                     </div>
                 </div>
@@ -773,6 +816,8 @@
 <script src="{{asset('plugins/bootstrap-select.min.js')}}"></script>
 <!-- Slick Slider -->
 <script src="{{asset('plugins/slick/slick.min.js')}}"></script>
+<!-- PopUp Slider -->
+<script src="{{asset('js/main.js')}}"></script>
 <!-- FancyBox -->
 <script src="{{asset('plugins/fancybox/jquery.fancybox.min.js')}}"></script>
 <!-- Google Map -->

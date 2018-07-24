@@ -43,6 +43,11 @@
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
+            <br>
+            <div class="form-group">
+                <label for="imagen_slider">Imágen Slider</label>
+                <input type="file" name="imagen_slider[]" class="form-control" multiple>
+            </div>
             {!!Form::close()!!}
 
         </div>

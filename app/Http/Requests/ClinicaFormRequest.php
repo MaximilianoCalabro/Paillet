@@ -25,7 +25,7 @@ class ClinicaFormRequest extends FormRequest
     {
         return [
             'imagen'=>'mimes:jpeg,bmp,png',
-            'texto'=>'required|max:500'
+            'texto'=>'required|max:1000'
         ];
     }
 }

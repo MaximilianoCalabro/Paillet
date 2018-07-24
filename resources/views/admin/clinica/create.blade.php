@@ -13,12 +13,16 @@
                 </div>
             @endif
 
-            {!!Form::open(array('url'=>'/admin/inicio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
+            {!!Form::open(array('url'=>'/admin/clinica','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
                 <label for="imagen">Imágen Slider</label>
                 <input type="file" name="imagen" class="form-control">
             </div>
+                        <div class="form-group">
+                <label for="texto">Texto</label>
+                <textarea type="text" name="texto" class="form-control" placeholder="Texto..."></textarea>
+            </div>     
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>

@@ -21,12 +21,12 @@ class ClinicaController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$clinica=DB::table('clinica')->get();
-    		return view('clinica.configurar_clinica.index',["clinica"=>$clinica,"searchText"=>$query]);
+    		return view('admin.clinica.index',["clinica"=>$clinica,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("clinica.configurar_clinica.create");
+    	return view ("admin.clinica.create");
     }
 	public function store(ClinicaFormRequest $request)
 	{
@@ -38,15 +38,15 @@ class ClinicaController extends Controller
 			$clinica->imagen=$file->getClientOriginalName();
 		}
 		$clinica->save();
-		return Redirect::to('clinica/configurar_clinica');
+		return Redirect::to('admin/clinica');
 	}
 	public function show($id)
 	{
-		return view("clinica.configurar_clinica.show",["clinica"=>Clinica::findOrFail($id)]);
+		return view("admin.clinica.show",["clinica"=>Clinica::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("clinica.configurar_clinica.edit",["clinica"=>Clinica::findOrFail($id)]);	
+		return view("admin.clinica.edit",["clinica"=>Clinica::findOrFail($id)]);	
 	}
 	public function update(ClinicaFormRequest $request, $id)
 	{
@@ -58,13 +58,13 @@ class ClinicaController extends Controller
 			$clinica->imagen=$file->getClientOriginalName();
 		}
 		$clinica->update();
-		return Redirect::to('clinica/configurar_clinica');
+		return Redirect::to('admin/clinica');
 	}
 	public function destroy($id)
 	{
 		$clinica=Clinica::findOrFail($id);
 		$clinica->delete();
-		return Redirect::to('clinica/configurar_clinica');
+		return Redirect::to('admin/clinica');
 	}
 
 }
