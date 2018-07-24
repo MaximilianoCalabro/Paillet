@@ -120,7 +120,7 @@
                             <div class="team-person text-center">
                                 <h6>Clínica</h6>
                                 <a href="#openModal2">
-                                    <img src="img/clinica.jpg" alt="team" class="foto2 img-responsive">
+                                    <img src="{{url('/')}}/img/{{$clinica[0]->imagen}}" alt="team" class="foto2 img-responsive">
                                 </a>
                             </div>
                             <!-- Modal 2 -->
