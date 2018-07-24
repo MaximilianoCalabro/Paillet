@@ -63,7 +63,7 @@
                 <div class="slider-item" style="background-image: url('{{url('/')}}/img/{{$sli->imagen}}');">
         @endif
         </div>
-        @endforeach
+    @endforeach
 
     </div>
 </div>

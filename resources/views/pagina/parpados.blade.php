@@ -81,36 +81,35 @@
             </div> <!-- Preguntas -->
             <!-- Slider -->
             <div class="col-md-12">
-              <h2 class="tit_slider">Antes y Después</h2>  
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <h2 class="tit_slider">Antes y Después</h2>
 
-                <!-- Wrapper for slides -->
-                @foreach($subseccion as $subs)
-                <div class="carousel-inner">
-                  @if ($loop->first)
-                    <div class="item active">
-                        <img src="{{url('/')}}/img/{{$subs->imagen}}" style="width:100%;">
-                    @else
-                    <div class="item">
-                        <img src="{{url('/')}}/img/{{$subs->imagen}}" style="width:100%;">
+                @foreach($subseccion as $subs)  
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        @if ($loop->first)
+                        <div class="item active">
+                            <img src="{{url('/')}}/img/{{$subs->imagen}}" style="width:100%; height: 50vh;">
+                            @else
+                            <div class="item">
+                                <img src="{{url('/')}}/img/{{$subs->imagen}}" style="width:100%; height: 50vh;">
+                        @endif
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="sr-only">Next</span>
+                    </a>
+                    </div>
                 @endforeach
-                  </div>
-                
                 </div>
-                
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+                <!-- EndSlider -->
             </div>
-            <!-- EndSlider -->
-        </div>
         <!--End single tab content-->
     </div>
 @endsection
