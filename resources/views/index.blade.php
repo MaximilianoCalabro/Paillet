@@ -222,25 +222,25 @@
                             CONTACTENOS
                         </h3>
                     </div>
-                    <form name="contact_form" class="default-form contact-form" action="sendmail.php" method="post">
+                    <form name="contact_form" class="default-form contact-form" action="contact_form.php" method="post">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <input type="text" name="Nombre" placeholder="Nombre" required="">
+                                    <input type="text" name="nombre" placeholder="Nombre" required="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="Phone" placeholder="Teléfono" required="">
+                                    <input type="text" name="telefono" placeholder="Teléfono" required="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="Correo" placeholder="Correo" required="">
+                                    <input type="email" name="correo" placeholder="Correo" required="">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <input type="text" name="Apellido" placeholder="Apellido" required="">
+                                    <input type="text" name="apellido" placeholder="Apellido" required="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="Ciudad" placeholder="Ciudad" required="">
+                                    <input type="text" name="ciudad" placeholder="Ciudad" required="">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="cirugia"></label>
@@ -259,7 +259,7 @@
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <textarea name="form_message" placeholder="Tu mensaje..." required=""></textarea>
+                                    <textarea name="mensaje" placeholder="Tu mensaje..." required=""></textarea>
                                 </div>
                                 <div class="form-group text-center">
                                     <button type="submit" class="btn-style-one">ENVIAR</button>
