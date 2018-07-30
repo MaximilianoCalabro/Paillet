@@ -1,2 +1,0 @@
-°Hacer el header:
-	https://stackoverflow.com/questions/8503636/transparent-half-circle-cut-out-of-a-div?noredirect=1&lq=1

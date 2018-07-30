@@ -24,7 +24,7 @@ class SubseccionFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'imagen'=>'mimes:jpeg,bmp,png',
+            'subseccion'=>'mimes:jpeg,bmp,png',
         ];
     }
 }

@@ -4,6 +4,7 @@ namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
 use paillet\Cirugias;
+use paillet\Subseccion;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use paillet\Http\Requests\CirugiasFormRequest;
@@ -19,9 +20,9 @@ class CirugiasController extends Controller
     {
     	if ($request)
     	{
-    		$query=trim($request->get('searchText'));
     		$cirugias=DB::table('cirugias')->get();
-    		return view('admin.cirugias.index',["cirugias"=>$cirugias,"searchText"=>$query]);
+    		$subseccion=DB::table('subseccion')->get();
+    		return view('admin.cirugias.index',["cirugias"=>$cirugias,"subseccion"=>$subseccion]);
     	}
     }
     public function create()
@@ -48,6 +49,16 @@ class CirugiasController extends Controller
 			$cirugias->imagen_slider=$file->getClientOriginalName();
 		}
 		$cirugias->save();
+		if (Input::hasFile ('subseccion')){
+			foreach ($request->subseccion as $img) {
+				$subseccion=new Subseccion;
+				$subseccion->id_cirugias=$cirugias->id_cirugias;
+				$file=$img;
+				$file->move(public_path().'/img/subseccion/',$file->getClientOriginalName());
+				$subseccion->subseccion=$file->getClientOriginalName();
+				$subseccion->save();
+			}
+		}
 		return Redirect::to('admin/cirugias');
 	}
 	public function show($id)
@@ -78,6 +89,16 @@ class CirugiasController extends Controller
 			$cirugias->imagen_slider=$file->getClientOriginalName();
 		}
 		$cirugias->update();
+		if (Input::hasFile ('subseccion')){
+			foreach ($request->subseccion as $img) {
+				$subseccion=new Subseccion;
+				$subseccion->id_cirugias=$cirugias->id_cirugias;
+				$file=$img;
+				$file->move(public_path().'/img/subseccion/',$file->getClientOriginalName());
+				$subseccion->subseccion=$file->getClientOriginalName();
+				$subseccion->save();
+			}
+		}
 		return Redirect::to('admin/cirugias');
 	}
 	public function destroy($id)

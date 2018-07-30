@@ -358,22 +358,22 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-12 col-xs-12">
             <a href="https://www.plasticsurgery.org/" target="_blank">
               <img class="media-object" src="img/icon1.png" alt="post-thumb">
             </a>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-12 col-xs-12">
             <a href="http://www.scperrl.org/" target="_blank">
               <img class="media-object" src="img/icon4.png" alt="post-thumb">
             </a>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-12 col-xs-12">
             <a href="http://www.sacper.org.ar/www/" target="_blank">
               <img class="media-object" src="img/icon2.png" alt="post-thumb">
             </a>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-12 col-xs-12">
             <a href="https://www.isaps.org/es/" target="_blank">
               <img class="media-object" src="img/icon3.png" alt="post-thumb">
             </a>
@@ -410,7 +410,7 @@
 <!-- FancyBox -->
 <script src="{{asset('plugins/fancybox/jquery.fancybox.min.js')}}"></script>
 <!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCClyAl2KmZcuWFqHOSaCrrVn2fydVcuGE"></script> 
 <script src="{{asset('plugins/google-map/gmap.js')}}"></script>
 
 <script src="{{asset('plugins/validate.js')}}"></script>
@@ -418,6 +418,34 @@
 <script src="{{asset('plugins/jquery-ui.js')}}"></script>
 <script src="{{asset('plugins/timePicker.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
+
+<!-- Slider -->
+<script src="{{asset('js/jquery.slides.js')}}"></script>
+<script>
+
+$(function(){
+    $(".slides").slidesjs({
+        play: {
+          active: true,
+            // [boolean] Generate the play and stop buttons.
+            // You cannot use your own buttons. Sorry.
+          effect: "slide",
+            // [string] Can be either "slide" or "fade".
+          interval: 3000,
+            // [number] Time spent on each slide in milliseconds.
+          auto: true,
+            // [boolean] Start playing the slideshow on load.
+          swap: true,
+            // [boolean] show/hide stop and play buttons
+          pauseOnHover: false,
+            // [boolean] pause a playing slideshow on hover
+          restartDelay: 2500
+            // [number] restart delay on inactive slideshow
+        }
+    });
+});
+
+</script>
 </body>
 
 </html>

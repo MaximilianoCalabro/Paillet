@@ -54,13 +54,12 @@
                 <input type="file" name="imagen" class="form-control">
             </div>
             <div class="form-group">
+                <label for="subseccion">Imágen Antes/Después(Procurar q todas sean del mismo tamaño)</label>
+                <input type="file" name="subseccion[]" class="form-control" multiple>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="imagen_slider">Imágen Slider</label>
-                <input type="file" name="imagen_slider[]" class="form-control" multiple>
             </div>
             {!!Form::close()!!}
 

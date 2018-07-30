@@ -18,6 +18,7 @@
 					<th>Prodecimientos</th>
 					<th>Post-operación</th>
 					<th>Imágen</th>
+					<th>Imágenes Antes/Después</th>
 				</thead>
                @foreach ($cirugias as $cat)
 				<tr>
@@ -28,6 +29,16 @@
 					<td>{{ $cat->procedimientos }}</td>
 					<td>{{ $cat->post_ope }}</td>
 					<td><img src="{{asset('img/'.$cat->imagen)}}" height="150px" width="150px"> </td>
+					@foreach ($subseccion as $s)
+						@if($s->id_cirugias == $cat->id_cirugias)
+						<td style="border: 1px solid black;">
+							<img src="{{asset('img/subseccion/'.$s->subseccion)}}" height="100px" width="100px">
+							{{Form::Open(array('action'=>array('SubseccionController@destroy',$s->id_subseccion),'method'=>'delete'))}}
+							<a href="" data-target="#modalslider-delete-{{$s->id_subseccion}}" data-toggle="modalslider"><button type="submit" class="btn btn-danger" style="float: right;">X</button></a>
+							{{Form::Close()}}
+						</td>
+						@endif
+					@endforeach
 					<td>
 						<a href="{{URL::action('CirugiasController@edit',$cat->id_cirugias)}}"><button class="btn btn-info">Editar</button></a>
                         <a href="" data-target="#modal-delete-{{$cat->id_cirugias}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>

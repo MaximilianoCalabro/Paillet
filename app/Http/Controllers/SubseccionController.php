@@ -31,10 +31,10 @@ class SubseccionController extends Controller
 	public function store(SubseccionFormRequest $request)
 	{
 		$subseccion=new Subseccion;
-		if (Input::hasFile ('imagen')){
-			$file=Input::file('imagen');
+		if (Input::hasFile ('subseccion')){
+			$file=Input::file('subseccion');
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
-			$subseccion->imagen=$file->getClientOriginalName();
+			$subseccion->subseccion=$file->getClientOriginalName();
 		}
 		$subseccion->save();
 		return Redirect::to('admin/subseccion');
@@ -50,10 +50,10 @@ class SubseccionController extends Controller
 	public function update(SubseccionFormRequest $request, $id)
 	{
 		$subseccion=Subseccion::findOrFail($id);
-		if (Input::hasFile ('imagen')){
-			$file=Input::file('imagen');
+		if (Input::hasFile ('subseccion')){
+			$file=Input::file('subseccion');
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
-			$subseccion->imagen=$file->getClientOriginalName();
+			$subseccion->subseccion=$file->getClientOriginalName();
 		}
 		$subseccion->update();
 		return Redirect::to('admin/subseccion');

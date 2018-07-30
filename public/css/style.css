@@ -801,7 +801,7 @@ li {
   height: 400px;
   width: 600px;
   color: white;
-  border: dotted 2px white;
+  box-shadow: 8px 8px 20px #296c71;
 }
 
 .contact .contact-form .form-control {
@@ -1722,7 +1722,7 @@ li {
   border-radius: 5px;
   width: 300px;
   height: 300px;
-  margin-left: 28%;
+  margin: 0 25%;
 }
 
 .team-members .team-person h6 {
@@ -3237,6 +3237,18 @@ li {
     margin-bottom: 20px;
     width: 100%;
   }
+  
+  .team-members .team-person img {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    display: block;
+  }
+  .map #map {
+    height: 380px;
+    width: 380px;
+  }
+
   .main-header.style-two .logo {
     float: none !important;
     text-align: center;
@@ -3337,6 +3349,12 @@ li {
     right: 0px;
     z-index: 12;
   }
+
+  .map #map {
+    height: 280px;
+    width: 100%;
+  }
+  
   .main-menu .navbar-header .navbar-toggle {
     display: block;
     border: 1px solid #ffffff;
@@ -3593,6 +3611,9 @@ li {
   position: relative;
   max-width: 200px;
   max-height: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 34px;
 }
 
 /* Carousel */
@@ -4018,7 +4039,7 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
 }
 
 .modalDialog .popTitulo {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .modalDialog .historia {
@@ -4027,7 +4048,7 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
 
 .modalDialog .historia p {
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 20px;
+  font-size: 1.1em;
   letter-spacing: 0.6px;
   word-spacing: -2px;
   color: #000000;
@@ -4072,6 +4093,52 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
   z-index: 11;
   background: rgba(0,0,0);
 }
+
+/*------------------*/
+/*    SLIDER2       */
+/*------------------*/
+.slides {
+  width:100%;
+}
+ 
+.slides img {
+  width:100%;
+}
+ 
+.slidesjs-pagination {
+  background:#424242;
+  list-style:none;
+  overflow:hidden;
+}
+ 
+.slidesjs-pagination li {
+  float:left;
+}
+ 
+.slidesjs-pagination li a {
+  display:block;
+  padding:10px 20px;
+  color:#fff;
+  text-decoration:none;
+}
+ 
+.slidesjs-pagination li a:hover {
+  background:#000;
+}
+ 
+.slides .active {
+  background:#000;
+}
+ 
+.slidesjs-navigation{
+  background:#48bdc5;
+  color:#fff;
+  text-decoration:none;
+  display:inline-block;
+  padding:13.5px 20px;
+  float:right;
+}
+/*------------------*/
 
 /*--------------------------------------------------------------
 # Hero Slider 2

@@ -13,8 +13,8 @@ class Subseccion extends Model
 	public $timestamps=false;
 
 	protected $fillable =[
-		'imagen',
-		'fk_cirugias'
+		'subseccion',
+		'id_cirugias'
 	];
 
 	protected $guarded =[

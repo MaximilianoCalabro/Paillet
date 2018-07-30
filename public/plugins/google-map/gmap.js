@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var nottingham = new google.maps.LatLng(51.507351, -0.127758);
+    var paillet = new google.maps.LatLng(-31.640483, -60.704741);
 
     var style = [
         {
@@ -73,13 +73,13 @@ function initialize() {
 
     var mapOptions = {
         // SET THE CENTER
-        center: nottingham,
+        center: paillet,
 
         // SET THE MAP STYLE & ZOOM LEVEL
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 
         // SET THE BACKGROUND COLOUR
-        backgroundColor:"#000",
+        backgroundColor:"#fff",
 
         // REMOVE ALL THE CONTROLS EXCEPT ZOOM
         zoom:17,
@@ -87,7 +87,7 @@ function initialize() {
         zoomControl:true,
         mapTypeControl:false,
         scaleControl:false,
-        streetViewControl:false,
+        streetViewControl:true,
         overviewMapControl:false,
         zoomControlOptions: {
             style:google.maps.ZoomControlStyle.LARGE
@@ -101,11 +101,11 @@ function initialize() {
     map.setMapTypeId('grey');
 
     //CREATE A CUSTOM PIN ICON
-    var marker_image ='plugins/google-map/images/marker.png';
-    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(74, 73));
+    var marker_image ='../plugins/google-map/images/marker.png';
+    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(45, 45));
 
     marker = new google.maps.Marker({
-        position: nottingham,
+        position: paillet,
         map: map,
         icon: pinIcon,
         title: 'eventre'

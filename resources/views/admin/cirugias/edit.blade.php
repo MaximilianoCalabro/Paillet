@@ -56,7 +56,10 @@
                     <img src="{{asset('img/'.$cirugias->imagen)}}" height="150px" width="150px">
                 @endif
             </div>
-
+            <div class="form-group">
+                  <label for="subseccion">Imágen Antes/Después(Mismo tamaño / Agrega Imágenes)</label>
+                  <input type="file" name="subseccion[]" class="form-control" multiple>
+            </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>

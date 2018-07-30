@@ -83,30 +83,14 @@
             <div class="col-md-12">
                 <h2 class="tit_slider">Antes y Después</h2>
 
-                
-                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-
-                    <!-- Wrapper for slides -->
-                    @foreach($subseccion as $subs)  
-                    <div class="carousel-inner">
-                        @if ($loop->first)
-                        <div class="item active">
-                            <img src="{{url('/')}}/img/{{$subs->imagen}}" style="width:100%; height: 50vh;">
-                            @else
-                            <div class="item">
-                                <img src="{{url('/')}}/img/{{$subs->imagen}}" style="width:100%; height: 50vh;">
-                        @endif
-                        </div>
+                <div class="main">
+                    <div class="slides">
+                        @foreach ($subseccion as $s)
+                            @if($s->id_cirugias == $cirugias[0]->id_cirugias)
+                            <img src="{{url('/')}}/img/subseccion/{{$s->subseccion}}" alt="">
+                            @endif
+                        @endforeach
                     </div>
-                    @endforeach
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-                      <span class="sr-only">Next</span>
-                    </a>
-                    </div>                
                 </div>
                 <!-- EndSlider -->
             </div>
