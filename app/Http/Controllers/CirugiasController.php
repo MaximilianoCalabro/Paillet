@@ -18,12 +18,9 @@ class CirugiasController extends Controller
     }
     public function index(Request $request)
     {
-    	if ($request)
-    	{
-    		$cirugias=DB::table('cirugias')->get();
-    		$subseccion=DB::table('subseccion')->get();
-    		return view('admin.cirugias.index',["cirugias"=>$cirugias,"subseccion"=>$subseccion]);
-    	}
+    	$cirugias=DB::table('cirugias')->get();
+    	$subseccion=DB::table('subseccion')->get();
+    	return view('admin.cirugias.index',["cirugias"=>$cirugias,"subseccion"=>$subseccion]);
     }
     public function create()
     {

@@ -1,7 +1,7 @@
 @extends ('index')
 @section ('cirugia')
     <div class="section-title text-center">
-      <h3>{{ $cirugias[0]->pertenece }}</h3>
+      <h3>PARPADOS</h3>
       <br>
     </div>
     <!-- Nav tabs -->

@@ -4,6 +4,7 @@ namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
 use paillet\CirugiaSlider;
+use paillet\Cirugias;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use paillet\Http\Requests\CirugiaSliderFormRequest;
@@ -19,9 +20,9 @@ class CirugiaSliderController extends Controller
     {
     	if ($request)
     	{
-    		$query=trim($request->get('searchText'));
     		$cirugia_slider=DB::table('cirugia_slider')->get();
-    		return view('admin.cirugia_slider.index',["cirugia_slider"=>$cirugia_slider,"searchText"=>$query]);
+    		$cirugias=DB::table('cirugias')->get();
+    		return view('admin.cirugia_slider.index',["cirugia_slider"=>$cirugia_slider,"cirugias"=>$cirugias]);
     	}
     }
     public function create()
@@ -39,7 +40,8 @@ class CirugiaSliderController extends Controller
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
 			$cirugia_slider->imagen=$file->getClientOriginalName();
 		}
-		$cirugia_slider->save();
+		$cirugias->pertenece=$request->get('pertenece');
+		$cirugias->save();
 		return Redirect::to('admin/cirugia_slider');
 	}
 	public function show($id)
@@ -61,7 +63,8 @@ class CirugiaSliderController extends Controller
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
 			$cirugia_slider->imagen=$file->getClientOriginalName();
 		}
-		$cirugia_slider->update();
+		$cirugias->pertenece=$request->get('pertenece');
+		$cirugias->update();
 		return Redirect::to('admin/cirugia_slider');
 	}
 	public function destroy($id)

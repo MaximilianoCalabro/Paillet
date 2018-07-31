@@ -24,7 +24,7 @@ class CirugiasFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'pertenece'=>'required|max:50',
+            'pertenece'=>'required',
             'nombre'=>'required|max:50',
             'que_es'=>'required|max:1000',
             'pre_ope'=>'required|max:1000',

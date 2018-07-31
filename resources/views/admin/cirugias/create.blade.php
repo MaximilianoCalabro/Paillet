@@ -19,14 +19,14 @@
                   <label for="pertenece">Pertenece a</label>
                   <br>
                   <select name="pertenece">
-                        <option value="-">------------</option> 
-                        <option value="Parpados">Parpados</option> 
-                        <option value="Nariz">Nariz</option>
-                        <option value="Facial">Facial</option>
-                        <option value="Mamarias">Mamarias</option>
-                        <option value="Corporal">Corporal</option>
-                        <option value="Botox">Botox</option>
-                        <option value="Otros">Otros</option>
+                        <option value="0">------------</option> 
+                        <option value="1">Parpados</option> 
+                        <option value="2">Nariz</option>
+                        <option value="3">Facial</option>
+                        <option value="4">Mamarias</option>
+                        <option value="5">Corporal</option>
+                        <option value="6">Botox</option>
+                        <option value="7">Otros</option>
                   </select>
             </div>
             <div class="form-group">

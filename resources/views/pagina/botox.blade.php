@@ -1,7 +1,7 @@
 @extends ('index')
 @section ('cirugia')
 <div class="section-title text-center">
-    <h3>Botox</h3>
+    <h3>BOTOX</h3>
     <br>
 </div>
 <!-- Nav tabs -->

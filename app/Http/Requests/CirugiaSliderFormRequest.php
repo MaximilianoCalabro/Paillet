@@ -26,8 +26,8 @@ class CirugiaSliderFormRequest extends FormRequest
         return [
             'imagen'=>'mimes:jpeg,bmp,png',
             'titulo'=>'required|max:250',
-            'texto'=>'required|max:500',
-            'direccion'=>'required|max:250',
+            'texto'=>'max:500',
+            'direccion'=>'max:250',
         ];
     }
 }
