@@ -8,7 +8,7 @@
     <div class="tabs">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
-                <a href="#blefaroplastia"  data-toggle="tab">{{ $cirugias[0]->nombre }}</a>
+                <a href="#{{ $cirugias[0]->nombre }}"  data-toggle="tab">{{ $cirugias[0]->nombre }}</a>
             </li>
         </ul>
     </div>

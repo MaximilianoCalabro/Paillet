@@ -17,12 +17,8 @@ class SubseccionController extends Controller
     }
     public function index(Request $request)
     {
-    	if ($request)
-    	{
-    		$query=trim($request->get('searchText'));
     		$subseccion=DB::table('subseccion')->get();
     		return view('admin.subseccion.index',["subseccion"=>$subseccion,"searchText"=>$query]);
-    	}
     }
     public function create()
     {

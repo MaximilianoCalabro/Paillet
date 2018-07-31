@@ -17,10 +17,13 @@ class CirugiasController extends Controller
 		
     }
     public function index(Request $request)
-    {
-    	$cirugias=DB::table('cirugias')->get();
-    	$subseccion=DB::table('subseccion')->get();
-    	return view('admin.cirugias.index',["cirugias"=>$cirugias,"subseccion"=>$subseccion]);
+    {	
+      	if ($request)
+    	{
+	    	$cirugias=DB::table('cirugias')->get();
+	    	$subseccion=DB::table('subseccion')->get();
+	    	return view('admin.cirugias.index',["cirugias"=>$cirugias,"subseccion"=>$subseccion]);
+	    }
     }
     public function create()
     {

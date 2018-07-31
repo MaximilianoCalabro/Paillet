@@ -18,12 +18,9 @@ class CirugiaSliderController extends Controller
     }
     public function index(Request $request)
     {
-    	if ($request)
-    	{
-    		$cirugia_slider=DB::table('cirugia_slider')->get();
-    		$cirugias=DB::table('cirugias')->get();
-    		return view('admin.cirugia_slider.index',["cirugia_slider"=>$cirugia_slider,"cirugias"=>$cirugias]);
-    	}
+       	$cirugia_slider = DB::table('cirugia_slider')->get();
+       	$cirugias = DB::table('cirugias')->get();
+	   	return view('admin.cirugia_slider.index',["cirugia_slider"=>$cirugia_slider,"cirugias"=>$cirugias]);
     }
     public function create()
     {
@@ -40,8 +37,9 @@ class CirugiaSliderController extends Controller
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
 			$cirugia_slider->imagen=$file->getClientOriginalName();
 		}
+		$cirugias->pertenece=$cirugia_slider->id_cirugia_slider;
 		$cirugias->pertenece=$request->get('pertenece');
-		$cirugias->save();
+		$cirugia_slider->save();
 		return Redirect::to('admin/cirugia_slider');
 	}
 	public function show($id)
@@ -63,8 +61,9 @@ class CirugiaSliderController extends Controller
 			$file->move(public_path().'/img/',$file->getClientOriginalName());
 			$cirugia_slider->imagen=$file->getClientOriginalName();
 		}
+		$cirugias->pertenece=$cirugia_slider->id_cirugia_slider;
 		$cirugias->pertenece=$request->get('pertenece');
-		$cirugias->update();
+		$cirugia_slider->update();
 		return Redirect::to('admin/cirugia_slider');
 	}
 	public function destroy($id)

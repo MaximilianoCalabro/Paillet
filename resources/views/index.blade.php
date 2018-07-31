@@ -167,6 +167,7 @@
             
             <h3>{{ $cirugia[0] -> titulo}}</h3> 
             <p>{{ $cirugia[0] -> texto}}</p>
+
         </div>
         <div class="row items-container clearfix">
             @foreach ($cirugia_slider as $slid)
