@@ -8,6 +8,10 @@ use DB;
 
 class OtrosController extends Controller
 {
+	public function __construct()
+    {
+    	$this->middleware('auth');
+    }
 	public function index()
 	{
 		$inicio=DB::table('inicio')->get();

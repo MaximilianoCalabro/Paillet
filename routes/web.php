@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/admin', function () {
-    return view('layouts/admin');
+Route::get('/.admin', function () {
+    return view('auth/login');
 });
 
 Route::resource('/admin/cirugia','CirugiaController');
@@ -40,3 +40,7 @@ Route::resource('/pagina/otros', 'OtrosController');
 
 
 Route::get('/', 'PaginaController@show');
+Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
+
+Route::get('/home', 'HomeController@index')->name('home');
