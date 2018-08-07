@@ -66,4 +66,6 @@ Route::resource('/admin/cirugias/sudoracion','SudoracionController');
 Route::resource('/admin/cirugias/orejas','OrejasController');
 Route::resource('/admin/cirugias/cutaneas','CutaneasController');
 Route::resource('/admin/cirugias/capilar','CapilarController');
-
+Route::resource('/admin/cirugias/lazer','LazerController');
+Route::resource('/admin/cirugias/brazos','BrazosController');
+Route::resource('/admin/cirugias/reconstruccion','ReconstruccionController');

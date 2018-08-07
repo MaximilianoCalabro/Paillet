@@ -14,6 +14,9 @@
                 <a href="#orthopedic" data-toggle="tab">{{ $abdominoplastia[0]->nombre }}</a>
             </li>
             <li role="presentation">
+                <a href="#orthopedic1" data-toggle="tab">{{ $brazos[0]->nombre }}</a>
+            </li>
+            <li role="presentation">
                 <a href="#sonogram" data-toggle="tab">{{ $pantorrillas[0]->nombre }}</a>
             </li>
             <li role="presentation">
@@ -114,7 +117,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapseUno" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div id="collapseUno" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUno">
                                                         <div class="panel-body">
                                                             {{ $abdominoplastia[0]->que }}
                                                         </div>
@@ -129,7 +132,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapseDos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div id="collapseDos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDos">
                                                         <div class="panel-body">
                                                             {{ $abdominoplastia[0]->pre }}
                                                         </div>
@@ -144,7 +147,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapseTres" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div id="collapseTres" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTres">
                                                         <div class="panel-body">
                                                             {{ $abdominoplastia[0]->pro }}
                                                         </div>
@@ -159,7 +162,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapseCuatro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                    <div id="collapseCuatro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCuatro">
                                                         <div class="panel-body">
                                                             {{ $abdominoplastia[0]->post }}
                                                         </div>
@@ -172,6 +175,81 @@
                             </div> <!-- Preguntas -->
                         </div>
                         <!--End single tab content-->
+
+    <!--Start single tab content-->
+    <div class="tab-content">
+        <div class="service-box tab-pane fade in active row" id="orthopedic1">
+            <div class="col-md-6">
+                <img class="img-responsive" src="{{url('/')}}/img/{{$brazos[0]->imagen}}" alt="service-image">
+            </div>
+            <div class="col-md-6"> <!-- Preguntas -->
+                <div class="contents">
+                    <div class="accordion5-section">
+                        <div class="accordion5-holder">
+                            <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading10">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                                ¿Qué es?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse10" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading10">
+                                        <div class="panel-body">
+                                            {{ $brazos[0]->que }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading20">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                                                    Pre-operatorio
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
+                                        <div class="panel-body">
+                                            {{ $brazos[0]->pre }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading30">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                                            Procedimiento
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading30">
+                                        <div class="panel-body">
+                                            {{ $brazos[0]->pro }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading40">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse40" aria-expanded="false" aria-controls="collapse40">
+                                            Post-operatorio
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse40" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading40">
+                                        <div class="panel-body">
+                                            {{ $brazos[0]->post }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> <!-- Preguntas -->
+        </div>
+        <!--End single tab content-->
 
                         <!--Start single tab content-->
                         <div class="service-box tab-pane fade in" id="sonogram">
@@ -191,7 +269,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
                                                         <div class="panel-body">
                                                             {{ $pantorrillas[0]->que }}
                                                         </div>
@@ -206,7 +284,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                                                         <div class="panel-body">
                                                             {{ $pantorrillas[0]->pro }}
                                                         </div>
@@ -221,7 +299,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                                                         <div class="panel-body">
                                                             {{ $pantorrillas[0]->pro }}
                                                         </div>
@@ -236,7 +314,7 @@
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                                                         <div class="panel-body">
                                                             {{ $pantorrillas[0]->post }}
                                                         </div>
@@ -261,59 +339,59 @@
                                         <div class="accordion4-holder">
                                             <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading" role="tab" id="heading1">
+                                                    <div class="panel-heading" role="tab" id="heading100">
                                                         <h4 class="panel-title">
-                                                            <a role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                                            <a role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse100" aria-expanded="true" aria-controls="collapse100">
                                                                 ¿Qué es?
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse10" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div id="collapse100" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading100">
                                                         <div class="panel-body">
                                                             {{ $gluteos[0]->que }}
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading" role="tab" id="heading2">
+                                                    <div class="panel-heading" role="tab" id="heading200">
                                                         <h4 class="panel-title">
-                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse20" aria-expanded="false"
-                                                                        aria-controls="collapse20">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse200" aria-expanded="false"
+                                                                        aria-controls="collapse200">
                                                                         Procedimiento
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div id="collapse200" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading200">
                                                         <div class="panel-body">
                                                             {{ $gluteos[0]->pro }}
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading" role="tab" id="heading3">
+                                                    <div class="panel-heading" role="tab" id="heading300">
                                                         <h4 class="panel-title">
-                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse30" aria-expanded="false"
-                                                                        aria-controls="collapse30">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse300" aria-expanded="false"
+                                                                        aria-controls="collapse300">
                                                                         Procedimiento
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div id="collapse300" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading300">
                                                         <div class="panel-body">
                                                             {{ $gluteos[0]->pro }}
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading" role="tab" id="heading4">
+                                                    <div class="panel-heading" role="tab" id="heading400">
                                                         <h4 class="panel-title">
-                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse40" aria-expanded="false"
-                                                                        aria-controls="collapse40">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse400" aria-expanded="false"
+                                                                        aria-controls="collapse400">
                                                                     Post-operatorio
                                                             </a>
                                                         </h4>
                                                     </div>
-                                                    <div id="collapse40" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                    <div id="collapse400" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading400">
                                                         <div class="panel-body">
                                                             {{ $gluteos[0]->post }}
                                                         </div>

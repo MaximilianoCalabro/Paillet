@@ -71,6 +71,74 @@ INSERT INTO `arrugas` (`id`, `nombre`, `que`, `pre`, `pro`, `post`, `imagen`) VA
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `reconstruccion`
+--
+
+CREATE TABLE `reconstruccion` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_bin NOT NULL,
+  `que` text COLLATE utf8_bin NOT NULL,
+  `pre` text COLLATE utf8_bin NOT NULL,
+  `pro` text COLLATE utf8_bin NOT NULL,
+  `post` text COLLATE utf8_bin NOT NULL,
+  `imagen` varchar(250) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `reconstruccion`
+--
+
+INSERT INTO `reconstruccion` (`id`, `nombre`, `que`, `pre`, `pro`, `post`, `imagen`) VALUES
+(1, 'Reconstrucción', 'Que Es', 'Preope', 'Procedimiento','Postope', 'anti-arruga.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `brazos`
+--
+
+CREATE TABLE `brazos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_bin NOT NULL,
+  `que` text COLLATE utf8_bin NOT NULL,
+  `pre` text COLLATE utf8_bin NOT NULL,
+  `pro` text COLLATE utf8_bin NOT NULL,
+  `post` text COLLATE utf8_bin NOT NULL,
+  `imagen` varchar(250) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `brazos`
+--
+
+INSERT INTO `brazos` (`id`, `nombre`, `que`, `pre`, `pro`, `post`, `imagen`) VALUES
+(1, 'Brazos', 'Que Es', 'Preope', 'Procedimiento','Postope', 'anti-arruga.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `lazer`
+--
+
+CREATE TABLE `lazer` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_bin NOT NULL,
+  `que` text COLLATE utf8_bin NOT NULL,
+  `pre` text COLLATE utf8_bin NOT NULL,
+  `pro` text COLLATE utf8_bin NOT NULL,
+  `post` text COLLATE utf8_bin NOT NULL,
+  `imagen` varchar(250) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `lazer`
+--
+
+INSERT INTO `lazer` (`id`, `nombre`, `que`, `pre`, `pro`, `post`, `imagen`) VALUES
+(1, 'Lazer CO2', 'Que Es', 'Preope', 'Procedimiento','Postope', 'anti-arruga.jpg');
+
+-- --------------------------------------------------------
+--
 -- Estructura de tabla para la tabla `aumento_mamario`
 --
 
