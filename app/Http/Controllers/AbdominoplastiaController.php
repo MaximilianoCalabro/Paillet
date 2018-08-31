@@ -4,6 +4,7 @@ namespace paillet\Http\Controllers;
 
 use Illuminate\Http\Request;
 use paillet\Abdominoplastia;
+use paillet\Slider;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use paillet\Http\Requests\AbdominoplastiaFormRequest;
@@ -20,7 +21,8 @@ class AbdominoplastiaController extends Controller
        	if ($request) 
     	{
 		    $abdominoplastia=DB::table('abdominoplastia')->get();
-		    return view('admin.cirugias.abdominoplastia.index',["abdominoplastia"=>$abdominoplastia]);
+		    $slider=DB::table('slider')->get();
+		    return view('admin.cirugias.abdominoplastia.index',["abdominoplastia"=>$abdominoplastia, "slider"=>$slider]);
 		}
     }
     public function create()
@@ -41,6 +43,16 @@ class AbdominoplastiaController extends Controller
 			$abdominoplastia->imagen=$file->getClientOriginalName();
 		}
 		$abdominoplastia->save();
+		if (Input::hasFile ('slider')){
+			foreach ($request->slider as $img) {
+				$slider=new Slider;
+				$slider->nombre=$abdominoplastia->nombre;
+				$file=$img;
+				$file->move(public_path().'/img/slider/',$file->getClientOriginalName());
+				$slider->slider=$file->getClientOriginalName();
+				$slider->save();
+			}
+		}
 		return Redirect::to('admin/cirugias/abdominoplastia');
 	}
 	public function show($id)
@@ -65,6 +77,16 @@ class AbdominoplastiaController extends Controller
 			$abdominoplastia->imagen=$file->getClientOriginalName();
 		}
 		$abdominoplastia->update();
+		if (Input::hasFile ('slider')){
+			foreach ($request->slider as $img) {
+				$slider=new Slider;
+				$slider->nombre=$abdominoplastia->nombre;
+				$file=$img;
+				$file->move(public_path().'/img/slider/',$file->getClientOriginalName());
+				$slider->slider=$file->getClientOriginalName();
+				$slider->save();
+			}
+		}
 		return Redirect::to('admin/cirugias/abdominoplastia');
 	}
 	public function destroy($id)

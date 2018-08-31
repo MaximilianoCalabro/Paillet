@@ -4,7 +4,7 @@ namespace paillet\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class SubseccionFormRequest extends FormRequest
+class SliderFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class SubseccionFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'subseccion'=>'mimes:jpeg,bmp,png',
-            'id'=>''
+            'slider'=>'',
+            'nombre'=>''
         ];
     }
 }

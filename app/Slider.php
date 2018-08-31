@@ -4,17 +4,17 @@ namespace paillet;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Subseccion extends Model
-{
-	protected $table='subseccion';
+class Slider extends Model
+{    
+	protected $table='slider';
 
-	protected $primaryKey='id_subseccion';
+	protected $primaryKey='id_slider';
 
 	public $timestamps=false;
 
 	protected $fillable =[
-		'subseccion',
-		'id'
+		'slider',
+		'nombre'
 	];
 
 	protected $guarded =[

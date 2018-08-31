@@ -743,7 +743,7 @@ li {
 /*----------------------------------*/
 
 .hero-slider {
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero-slider .slider-item {
@@ -759,7 +759,7 @@ li {
           align-items: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 }
 
@@ -974,6 +974,11 @@ li {
   line-height: 19px;
 }
 
+.espacio {
+  margin-left: 15%;
+}
+
+
 .map {
   position: relative;
 }
@@ -1009,9 +1014,7 @@ li {
 .contact .address-block .media i {
   /*color: #48bdc5;*/
   font-size: 30px;
-  margin-right: 35px;
   width: 40px;
-  display: block;
 }
 
 @media (max-width: 767px) {
@@ -3109,8 +3112,8 @@ li {
 }
 
 .footer-main .footer-top {
-  padding-top: 85px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .footer-main .footer-top .footer-logo {
@@ -4450,5 +4453,68 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
   font-family: "FontAwesome";
 }
 
+/*-----------------------------------------*/
+/*               FONDO                     */
+/*-----------------------------------------*/
+
+.fondo {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 80vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-1.7, 0.1, 0.1, 0.95, 1, 0);
+    pointer-events: none;
+    box-shadow: 73px -300px 44px 159px #41b0b8;
+}
+
+.fondo2{
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 80vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
+    pointer-events: none;    
+    box-shadow: 300px 230px 44px 159px #41b0b8;
+}
+
+.fondo3{
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 80vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
+    pointer-events: none;    
+    box-shadow: 300px 230px 44px 159px #41b0b8;
+}
+
+.fondo2{
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 80vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
+    pointer-events: none;    
+    box-shadow: 300px 230px 44px 159px #41b0b8;
+}
 
 /*# sourceMappingURL=maps/style.css.map */

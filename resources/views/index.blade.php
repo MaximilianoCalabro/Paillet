@@ -49,7 +49,10 @@
 </section>
 <!--Header Upper-->
 
-
+<div class="fondo">
+</div>
+<div class="fondo2">
+</div>
 
 <!--=================================
 =            Page Slider            =
@@ -208,12 +211,13 @@
 </section>
 <!--End about us area-->
 
+<div class="fondo3">
+</div>
+<div class="fondo4">
+</div>
+
 <!-- Contact Section -->
 <section class="appoinment-section section" style="z-index: 1;">
-    <div class="color1">
-        <div class="color2">
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -285,55 +289,68 @@
             <div class="col-md-6">
                 <!-- address start -->
                 <div class="address-block">
+
                     @foreach ($contacto as $cont)
+
                     <!-- Location -->
                     <div class="media">
-                        <i class="fa fa-map-o"></i>
+                        
                         <div class="media-body">
-                            <h3>{{ $cont->direccion }}</h3>
+                            <h3><i class="fa fa-map-o"></i> San Martín 3067 PA <br>
+                               <span class="espacio">Santa Fe 3000, Argentina</span></h3>
                         </div>
-                    </div>   
+                    </div>  
+
                     <!-- Phone --> 
                     <div class="media">
-                        <i class="fa fa-phone"></i>
+                        
                         <div class="media-body">
-                            <h3>{{ $cont->telefono }}</h3>
+                            <h3><i class="fa fa-phone"></i> {{ $cont->telefono }}</h3>
                         </div>
                     </div>
+
                     <!-- Whatsapp -->  
                     <div class="media">
-                        <i class="fa fa-whatsapp"></i>
+                        
                         <div class="media-body">
-                            <h3>{{ $cont->whatsapp }}</h3>
+                            <h3><i class="fa fa-whatsapp"></i> {{ $cont->whatsapp }}</h3>
                         </div>
                     </div>
+
                     <!-- Email -->
                     <div class="media">
-                        <i class="fa fa-envelope-o"></i>
+                        
                         <div class="media-body">
-                            <h3>{{ $cont->correo }}</h3>
+                            <h3><i class="fa fa-envelope-o"></i> {{ $cont->correo }}</h3>
                         </div>
                     </div>
+
                     <div class="media">
-                        <i class="fa fa-clock-o"></i>
+                        
                         <div class="media-body">
-                            <h3>Horarios de Consultorio :</h3>
+                            <h3><i class="fa fa-clock-o"></i> Horarios de Consultorio :</h3>
                             <p>
                                 Lunes a Viernes - 8:00 a 12:00 / 16:00 a 20:00
-                                <br>Sabados - 8:00 to 12:00
                             </p>
                         </div>
                     </div>
+
                     <div class="about-widget">
+
                       <ul class="list-inline social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+
+                        <li><a href="https://es-la.facebook.com/drjuancarlospaillet/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+                        <li><a href="https://www.instagram.com/juanpaillet/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
                       </ul>
+
                     </div>
+
                 <!-- address end -->
+
                 @endforeach
+
                 </div>
                 <div class="col-md-8">
 
