@@ -53,6 +53,8 @@
 </div>
 <div class="fondo2">
 </div>
+<div class="fondo25">
+</div>
 
 <!--=================================
 =            Page Slider            =
@@ -212,6 +214,8 @@
 <!--End about us area-->
 
 <div class="fondo3">
+</div>
+<div class="fondo35">
 </div>
 <div class="fondo4">
 </div>
