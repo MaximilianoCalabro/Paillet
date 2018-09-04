@@ -48,12 +48,13 @@
       </div>
 </section>
 <!--Header Upper-->
-
-<div class="fondo">
-</div>
-<div class="fondo2">
-</div>
-<div class="fondo25">
+<div>
+    <div class="fondo">
+    </div>
+    <div class="fondo2">
+    </div>
+    <div class="fondo25">
+    </div>
 </div>
 
 <!--=================================
@@ -213,11 +214,13 @@
 </section>
 <!--End about us area-->
 
-<div class="fondo3">
-</div>
-<div class="fondo35">
-</div>
-<div class="fondo4">
+<div>
+    <div class="fondo3">
+    </div>
+    <div class="fondo4">
+    </div>
+    <div class="fondo35">
+    </div>
 </div>
 
 <!-- Contact Section -->

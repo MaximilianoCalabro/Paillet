@@ -260,6 +260,12 @@ li {
   }
 }
 
+@media (max-width: 1025px) {
+  .fondo3, .fondo35, .fondo4 {
+    display: none;
+  }
+}
+
 .header-top .top-left h6 {
   font-size: 15px;
   line-height: 26px;
@@ -743,7 +749,7 @@ li {
 /*----------------------------------*/
 
 .hero-slider {
-  height: 80vh;
+  height: 75vh;
 }
 
 .hero-slider .slider-item {
@@ -3408,7 +3414,7 @@ li {
     width: 40% !important;
   }
   .service-tab-section .tab-content {
-    width: 60% !important;
+    width: 100% !important;
   }
 }
 
@@ -4457,7 +4463,7 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
 /*               FONDO                     */
 /*-----------------------------------------*/
 
-.fondo {
+/*.fondo {
     position: absolute;
     overflow: hidden;
     z-index: 1;
@@ -4469,7 +4475,7 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
     -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
     transform: matrix(-1.7, 0.1, 0.1, 0.95, 1, 0);
     pointer-events: none;
-    box-shadow: 73px -300px 44px 159px #41b0b8;
+    box-shadow: 9px -5px 40px 90px #41b0b8;
 }
 
 .fondo2{
@@ -4485,7 +4491,6 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
     transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
     pointer-events: none;    
     box-shadow: 300px 230px 44px 159px #41b0b8;
-    overflow: hidden;
 }
 
 .fondo25{
@@ -4501,9 +4506,55 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
     transform: matrix(0.9, 0.3, 1.9, 0.1, 1.5, 245.5);
     pointer-events: none;    
     box-shadow: 300px -300px 50px 200px #41b0b8;
+}*/
+
+/* ARRIBA */
+.fondo {
+    position: absolute;
     overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 75vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-1.7, 0.1, 0.1, 0.95, 1, 0);
+    pointer-events: none;
+    box-shadow: 9px -40px 0px 90px #41b0b8;
 }
 
+.fondo25{
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0.5;
+    width: 100%;
+    height: 75vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(1.5, 0.3, 2.9, 0.1, 1.5, 245.5);
+    pointer-events: none;    
+    box-shadow: 150px -300px 1px 200px #41b0b8;
+}
+
+.fondo2{
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    height: 75vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
+    pointer-events: none;    
+    box-shadow: 300px 230px 44px 159px #41b0b8;
+}
+
+/* ABAJO */
 .fondo3 {
     position: absolute;
     overflow: hidden;
@@ -4519,21 +4570,6 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
     box-shadow: 73px -60px 44px 90px #03949f;
 }
 
-.fondo4{
-    position: absolute;
-    overflow: hidden;
-    z-index: 0;
-    opacity: 1;
-    width: 100%;
-    height: 80vh;
-    border-radius: 75%;
-    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
-    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
-    transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
-    pointer-events: none;    
-    box-shadow: 300px 230px 44px 159px #41b0b8;
-}
-
 .fondo35{
     position: absolute;
     overflow: hidden;
@@ -4547,6 +4583,21 @@ background: linear-gradient(to bottom, #FFFFFF 0%, #98959B 100%);
     transform: matrix(0.9, 0.3, 1.9, 0.1, 1.5, 245.5);
     pointer-events: none;    
     box-shadow: 300px -300px 50px 200px #41b0b8;
+}
+
+.fondo4{
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 1;
+    width: 100%;
+    height: 80vh;
+    border-radius: 75%;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(-0.9, 0.17, 1.9, 0.1, 1.5, 245.5);
+    pointer-events: none;    
+    box-shadow: 300px 230px 44px 159px #41b0b8;
 }
 
 
