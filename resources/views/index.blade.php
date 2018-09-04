@@ -224,7 +224,7 @@
 </div>
 
 <!-- Contact Section -->
-<section class="appoinment-section section" style="z-index: 1;">
+<section class="appoinment-section section" style="z-index: 1; padding: 90px 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
